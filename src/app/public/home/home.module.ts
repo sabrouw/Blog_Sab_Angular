@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CardHomeComponent } from './components/dumb/card-home/card-home.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CardHomeComponent
+  ],
   imports: [
     CommonModule
   ]

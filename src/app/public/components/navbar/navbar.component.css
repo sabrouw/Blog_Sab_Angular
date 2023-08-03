@@ -1,8 +1,7 @@
 @font-face {
   font-family:Euphoria script;
-  src: url(../../../../assets/fonts/EuphoriaScript-Regular.ttf) format('trueType')
-}
-
+  src: url(assets/fonts/EuphoriaScript-Regular.ttf) format('trueType')
+};
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,49 +16,53 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
   min-height: 200vh;
 
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 .example-container {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   background-color: #FFffff;
   position: relative;
   background-image: url("../../../../assets/images/Vector1.svg");
   background-repeat: no-repeat;
-  background-size:cover ;
-
-
+  background-size: cover;
 }
 
 .sidenav-content {
@@ -67,7 +70,6 @@ table {
   height: 100%;
   align-items: center;
   justify-content: center;
-
 }
 
 .example-sidenav {
@@ -75,82 +77,86 @@ table {
   width: 250px;
 }
 
-
-
-#container-nav{
-position: relative;
+#container-nav {
+  position: relative;
 }
 
-
-.block-presentation{
+.block-presentation {
   display: flex;
   align-items: center;
   max-width: 650px;
   margin-bottom: 15%;
 }
-#img-presentation{
+
+#img-presentation {
   border-radius: 50%;
   float: right;
   shape-outside: margin-box;
   margin: 0% 0% 0% 10%;
-  object-fit: cover;
-
-
-#bg-img{
-  background-image: url('../../../../assets/images/Vector-bg.svg');
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+#img-presentation #bg-img {
+  background-image: url("../../../../assets/images/Vector-bg.svg");
 }
-#text-presentation{
+
+#text-presentation {
   line-height: 1.4;
 }
 
-
-
-#logo{
+#logo {
   width: 100px;
- margin-bottom: 40%;
- position: absolute;
+  margin-bottom: 40%;
+  position: absolute;
 }
 
-#logo-nav{
+#logo-nav {
   width: 100px;
   margin-left: 30%;
 }
 
-
-
-
-.group-card{
+.group-card {
   position: absolute;
   margin-top: 40%;
   margin-left: 5%;
   width: 800px;
   height: 250px;
 }
-#card-bleue{
-position:absolute;
 
-}
-#card-verte{
-position: absolute;
-
+#card-bleue {
+  position: absolute;
 }
 
-#titre-bienvenue{
+#card-verte {
+  position: absolute;
+}
+
+#titre-bienvenue {
   position: absolute;
   margin-left: 50%;
-  font-family: 'Euphoria Script';
+  font-family: "Euphoria Script";
   font-size: 3rem;
   transform: rotate(-12.31deg);
   margin-top: 1%;
   font-weight: bold;
-
-
 }
-#text-group{
+
+#text-group {
   position: absolute;
   float: left;
   shape-outside: margin-box;
   margin-left: 50%;
   margin-top: 10%;
 }
+
+.navbar__button__ensavoirpluss {
+  position: absolute;
+  margin: auto;
+}
+
+.navbar__button__poursuivre {
+  margin-top: 5%;
+  display: flex;
+  align-self: center;
+  margin-left: 25%;
+}/*# sourceMappingURL=navbar.component.css.map */

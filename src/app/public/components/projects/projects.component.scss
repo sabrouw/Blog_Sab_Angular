@@ -17,7 +17,6 @@
   margin: 0 auto;
   padding: 40px 60px;
 
-
 }
 
 
@@ -88,4 +87,7 @@
   font-family: "Euphoria Script";
   font-weight: bold;
   font-size: 3rem;
+}
+article:hover {
+  transform: scale(1.1);
 }

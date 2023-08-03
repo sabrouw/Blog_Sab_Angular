@@ -1,0 +1,14 @@
+.formation__group__card {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 10%;
+  width: 800px;
+  height: 250px;
+  margin-bottom: 5%;
+  background-color: rgba(205, 180, 219, 0.2784313725);
+}
+
+.titre__formation__card {
+  font-family: "Euphoria Script";
+  font-size: 3rem;
+}/*# sourceMappingURL=formation.component.css.map */

@@ -1,50 +1,3 @@
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-  min-height: 200vh;
-
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 .example-container {
   width:100%;
   height:100%;
@@ -53,8 +6,6 @@ table {
   background-image: url("../../../../assets/images/Vector1.svg");
   background-repeat: no-repeat;
   background-size:cover ;
-
-
 }
 
 .sidenav-content {
@@ -62,7 +13,6 @@ table {
   height: 100%;
   align-items: center;
   justify-content: center;
-
 }
 
 .example-sidenav {
@@ -91,13 +41,12 @@ position: relative;
 
 
 #bg-img{
-  background-image: url('../../../../assets/images/Vector-bg.svg');
+  background-image: url('../../../../assets/images/bg.png');
 }
 }
 #text-presentation{
   line-height: 1.4;
 }
-
 
 
 #logo{
@@ -112,7 +61,6 @@ position: relative;
 }
 
 
-
 .group-card{
   position: absolute;
   margin-top: 40%;
@@ -120,13 +68,13 @@ position: relative;
   width: 800px;
   height: 250px;
 }
+
 #card-bleue{
 position:absolute;
-
 }
+
 #card-verte{
 position: absolute;
-
 }
 
 #titre-bienvenue{
@@ -137,9 +85,8 @@ position: absolute;
   transform: rotate(-12.31deg);
   margin-top: 1%;
   font-weight: bold;
-
-
 }
+
 #text-group{
   position: absolute;
   float: left;
@@ -148,9 +95,10 @@ position: absolute;
   margin-top: 10%;
 }
 
-.navbar__button__ensavoirpluss{
+.navbar__button__ensavoirplus{
   position: absolute;
-  margin:auto;
+  margin:5%;
+
 }
 .navbar__button__poursuivre{
   margin-top: 5%;

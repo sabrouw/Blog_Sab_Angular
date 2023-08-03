@@ -25,6 +25,7 @@ import { ButtonComponent } from './public/components/button/button.component';
 import { ProjectsComponent } from './public/components/projects/projects.component';
 import { CardHomeComponent } from './public/components/card-home/card-home.component';
 import { CardLangagesComponent } from './public/components/card-langages/card-langages.component';
+import { FormationComponent } from './public/components/formation/formation.component';
 
 
 
@@ -40,6 +41,7 @@ import { CardLangagesComponent } from './public/components/card-langages/card-la
     ProjectsComponent,
     CardHomeComponent,
     CardLangagesComponent,
+    FormationComponent,
   ],
   imports: [
     BrowserModule,

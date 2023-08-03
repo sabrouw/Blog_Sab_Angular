@@ -1,9 +1,6 @@
 <mat-drawer-container class="example-container" autosize id="container-nav">
-
   <mat-drawer #drawer class="example-sidenav" mode="side">
-
-
-    <img id="logo-nav" src="../../../../assets/images/Logo.svg" alt="">
+    <img id="logo-nav" src="../../../../assets/images/Logo.svg" alt="" />
     <mat-grid-list cols="1" rowHeight="3:1" *ngIf="showFiller">
       <mat-grid-tile>Contact</mat-grid-tile>
       <mat-grid-tile>Articles</mat-grid-tile>
@@ -11,29 +8,36 @@
       <mat-grid-tile><a routerLink="/projets/">Projets</a></mat-grid-tile>
     </mat-grid-list>
 
-
-    <button (click)="showFiller = !showFiller" mat-raised-button  mat-raised-button matTooltip="Clique ici pour voir la suite"
-    [matTooltipDisabled]="disabled.value"
-    aria-label="Button that displays a tooltip that can be programmatically disabled"  appButton class="navbar__button__poursuivre">
+    <button
+      (click)="showFiller = !showFiller"
+      mat-raised-button
+      mat-raised-button
+      matTooltip="Clique ici pour voir la suite"
+      [matTooltipDisabled]="disabled.value"
+      aria-label="Button that displays a tooltip that can be programmatically disabled"
+      appButton
+      class="navbar__button__poursuivre"
+    >
       Encore plus...
     </button>
   </mat-drawer>
 
-
   <mat-drawer-content>
-    <button class="navbar__button__ensavoirplus" type="button"
-    mat-raised-button matTooltip="Clique ici pour voir la suite"
-    [matTooltipDisabled]="disabled.value"
-    aria-label="Button that displays a tooltip that can be programmatically disabled"
-    appButton
-    (click)="drawer.toggle()">
-      En savoir plus
-    </button>
+    <a
+      class="navbar__button__ensavoirplus"
+      type="button"
+      matTooltip="Clique ici pour voir la suite"
+      [matTooltipDisabled]="disabled.value"
+      aria-label="cela est un tooltip"
+      (click)="drawer.toggle(); changeIcon()"
+    >
+      <img
+        src="../../../../assets/images/burger.svg"
+        alt="icon-porte"      />
+    </a>
     <router-outlet></router-outlet>
-
-
     <app-projects></app-projects>
-
+    <app-formation></app-formation>
   </mat-drawer-content>
-<app-footer></app-footer>
+  <app-footer></app-footer>
 </mat-drawer-container>

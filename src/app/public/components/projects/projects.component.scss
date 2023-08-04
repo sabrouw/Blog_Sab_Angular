@@ -1,24 +1,15 @@
-.projects__title{
-  margin-left: 46%;
-  position: relative;
-  font-family: 'Euphoria Script';
-}
-
-.projects__title>*{
-  display: flex;
-  margin-top: 35%;
-}
-
-
 .timeline {
   position: relative;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 60px;
-
+  @media screen and (max-width: 640px) {
+    height: 100%;
+    margin-left: 0%;
+    margin-top: 10%;
+  }
 }
-
 
 .timeline:after {
   content: "";
@@ -27,16 +18,23 @@
   bottom: 20px;
   left: 50%;
   width: 8px;
-  background: #2F3E46;
+  background: #2f3e46;
   border-radius: 3px;
   z-index: 1;
+  @media screen and (max-width: 640px) {
+    visibility: hidden;
+  }
 }
 .timeline article {
   position: relative;
   background: #bde0fe4f;
-  width: calc( 50% - 40px );
+  width: calc(50% - 40px);
   padding: 15px;
   border-radius: 5%;
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 
 .timeline article + article {
@@ -48,21 +46,28 @@
   display: block;
   position: absolute;
   top: 0;
-  left: calc( 100% + 26px );
-  background: #BDE0FE;
+  left: calc(100% + 26px);
+  background: #bde0fe;
   width: 24px;
   height: 24px;
-  border: 6px #654A75 solid;
+  border: 6px #654a75 solid;
   border-radius: 50%;
   z-index: 2;
+  @media screen and (max-width: 640px) {
+    visibility: hidden;
+    margin-right: 100%;
+  }
 }
 .timeline article:nth-child(even) {
-  margin-left: calc( 50% + 48px );
+  margin-left: calc(50% + 48px);
+  @media screen and (max-width: 640px) {
+    margin-left: 0;
+  }
 }
 
 .timeline article:nth-child(even):before {
   left: auto;
-  right: calc( 100% + 26px );
+  right: calc(100% + 26px);
 }
 
 .timeline article:nth-child(even):after {
@@ -75,18 +80,29 @@
 .projects__title {
   margin-left: 44%;
   position: relative;
-
+  font-family: "Euphoria Script";
+  @media screen and (max-width: 640px) {
+    margin-top: 120vh;
+    margin-left: 0;
+    margin-right: 10%;
+  }
 }
 
 .projects__title > * {
   display: flex;
-  margin-top: 35%;
+  margin-top: 40%;
+  @media screen and (max-width: 640px) {
+    margin-left: 35%;
+  }
 }
 
-.projects__title> h2{
+.projects__title > h2 {
   font-family: "Euphoria Script";
   font-weight: bold;
   font-size: 3rem;
+  @media screen and (max-width: 640px) {
+
+  }
 }
 article:hover {
   transform: scale(1.1);

@@ -1,87 +1,113 @@
 @font-face {
-  font-family:Euphoria script;
-  src: url(../../../../assets/fonts/EuphoriaScript-Regular.ttf) format('trueType')
+  font-family: Euphoria script;
+  src: url(../../../../assets/fonts/EuphoriaScript-Regular.ttf)
+    format("trueType");
 }
-
 
 .sidenav-content {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
 }
 
-.example-sidenav {
-  background-color: #CDB4DB;
-  width: 250px;
+#container-nav {
+  position: relative;
 }
 
-#container-nav{
-position: relative;
-}
-
-.block-presentation{
+.block-presentation {
   display: flex;
   align-items: center;
   max-width: 70%;
   margin-left: 5%;
   margin-bottom: 10%;
+  @media screen and (max-width: 640px) {
+    margin-top: 50vh;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-bottom:25%;
+    min-width: 80%;
+  }
 }
-#img-presentation{
+#img-presentation {
   border-radius: 50%;
   float: right;
   shape-outside: margin-box;
   margin: 0% 0% 0% 10%;
   object-fit: cover;
 
-#bg-img{
-  background-image: url('../../../../assets/images/Vector-bg.svg');
+  #bg-img {
+    background-image: url("/assets/images/Vector-bg.svg");
+  }
 }
-}
-.text-presentation{
+.text-presentation {
   line-height: 1.4;
   margin-top: 15%;
+  margin-bottom: 10%;
 }
 
 
-#logo{
+#logo {
   width: 100px;
- margin-bottom: 40%;
- position: absolute;
+  margin-bottom: 38%;
+  position: absolute;
+  @media screen and (max-width: 640px) {
+    display: flex;
+    margin-bottom: 80vh;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 80vh;
+
+  }
 }
 
-#logo-nav{
+#logo-nav {
   width: 100px;
   margin-left: 30%;
 }
 
-.group-card{
+.group-card {
   position: absolute;
   margin-top: 50%;
-  margin-left: 5%;
-  width: 75%;
-  height: 45%;
+  margin-inline: 5%;
+  width: 80%;
+  height: 60%;
   max-height: 100%;
-}
-#card-bleue{
-position:absolute;
+  @media screen and (max-width: 640px) {
+    height: 200%;
+    margin-top: 230vh;
+
+  }
+
 
 }
-#card-verte{
-position: absolute;
+#card-bleue {
+  position: absolute;
+}
+#card-verte {
+  position: absolute;
 }
 
-#titre-bienvenue{
+#titre-bienvenue {
   position: absolute;
   margin-left: 50%;
-  font-family: 'Euphoria Script';
+  font-family: "Euphoria Script";
   font-size: 3rem;
   transform: rotate(-12.31deg);
   margin-top: 1%;
   font-weight: bold;
+  @media screen and (max-width: 640px) {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 115%;
+  }
 }
-#text-group{
+#text-group {
   position: absolute;
   float: left;
   shape-outside: margin-box;
@@ -89,4 +115,12 @@ position: absolute;
   margin-top: 10%;
   line-height: 2;
   padding-right: 2%;
+  height: 300px;
+  @media screen and (max-width: 640px) {
+    height: 100%;
+    margin-top: 130%;
+    margin-left: 0%;
+  }
+
+
 }

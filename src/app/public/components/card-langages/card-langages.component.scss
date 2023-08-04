@@ -6,7 +6,7 @@
   margin: 0 auto;
   margin-top: 10%;
   margin-bottom: 10%;
-  padding:5% ;
+  padding: 5%;
   border: solid 30px #2e52652c;
 }
 
@@ -16,11 +16,9 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 8px;
-
-
 }
 
-.card__langages>* {
+.card__langages > * {
   width: 100%;
 }
 .card__langages:hover {

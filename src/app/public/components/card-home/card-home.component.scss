@@ -1,6 +1,6 @@
 @font-face {
   font-family: Euphoria script;
-  src: url(../../../../assets/fonts/EuphoriaScript-Regular.ttf)
+  src: url(/assets/fonts/EuphoriaScript-Regular.ttf)
     format("trueType");
 }
 
@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-#container-nav {
+.container-nav {
   position: relative;
 }
 
@@ -29,18 +29,18 @@
     flex-direction: column-reverse;
   }
   @media screen and (max-width: 1200px) {
-    margin-bottom:25%;
+    margin-bottom: 25%;
     min-width: 80%;
   }
 }
-#img-presentation {
+.img-presentation {
   border-radius: 50%;
   float: right;
   shape-outside: margin-box;
   margin: 0% 0% 0% 10%;
   object-fit: cover;
 
-  #bg-img {
+  .bg-img {
     background-image: url("/assets/images/Vector-bg.svg");
   }
 }
@@ -50,8 +50,7 @@
   margin-bottom: 10%;
 }
 
-
-#logo {
+.logo {
   width: 100px;
   margin-bottom: 38%;
   position: absolute;
@@ -61,11 +60,10 @@
   }
   @media screen and (max-width: 1200px) {
     margin-bottom: 80vh;
-
   }
 }
 
-#logo-nav {
+.logo-nav {
   width: 100px;
   margin-left: 30%;
 }
@@ -80,19 +78,16 @@
   @media screen and (max-width: 640px) {
     height: 200%;
     margin-top: 230vh;
-
   }
-
-
 }
-#card-bleue {
+.card-bleue {
   position: absolute;
 }
-#card-verte {
+.card-verte {
   position: absolute;
 }
 
-#titre-bienvenue {
+.titre-bienvenue {
   position: absolute;
   margin-left: 50%;
   font-family: "Euphoria Script";
@@ -107,7 +102,7 @@
     margin-top: 115%;
   }
 }
-#text-group {
+.text-group {
   position: absolute;
   float: left;
   shape-outside: margin-box;
@@ -121,6 +116,4 @@
     margin-top: 130%;
     margin-left: 0%;
   }
-
-
 }

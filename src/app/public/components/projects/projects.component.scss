@@ -80,7 +80,6 @@
 .projects__title {
   margin-left: 44%;
   position: relative;
-  font-family: "Euphoria Script";
   @media screen and (max-width: 640px) {
     margin-top: 120vh;
     margin-left: 0;
@@ -100,9 +99,6 @@
   font-family: "Euphoria Script";
   font-weight: bold;
   font-size: 3rem;
-  @media screen and (max-width: 640px) {
-
-  }
 }
 article:hover {
   transform: scale(1.1);

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, tap } from 'rxjs';
+
 
 
 @Injectable({
@@ -11,7 +11,5 @@ export class ArticlesService {
 
   constructor(private http: HttpClient) { }
 
-  getArticlesList() {
-
-  }
+  
 }

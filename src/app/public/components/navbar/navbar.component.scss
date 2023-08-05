@@ -37,13 +37,16 @@
   margin-left: 30%;
   @media screen and (max-width: 640px) {
     margin-top: 5%;
-    margin-left: 40%;
+    margin-left: 38%;
   }
 }
 
 .navbar__button__ensavoirplus {
   position: absolute;
   margin: 5%;
+  @media screen and (max-width: 640px) {
+    margin-right: 50%;
+  }
 }
 .navbar__button__poursuivre {
   margin-top: 5%;
@@ -53,5 +56,17 @@
   @media screen and (max-width: 640px) {
     margin-top: 10%;
     margin-left: 35%;
+    visibility: hidden;
   }
+}
+#navbar__button__close{
+display: flex;
+align-self: flex-end;
+justify-self:end;
+@media screen and (min-width: 640px) {
+  visibility: hidden;
+}
+}
+.scroll-to-top-button{
+  background-color: aqua;
 }

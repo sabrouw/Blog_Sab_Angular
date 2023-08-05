@@ -1,92 +1,42 @@
 @font-face {
   font-family: Euphoria script;
-  src: url(../../../../assets/fonts/EuphoriaScript-Regular.ttf) format("trueType");
+  src: url("/assets/fonts/EuphoriaScript-Regular.ttf") format("trueType");
 }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  min-height: 200vh;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.example-container {
-  width: 100%;
-  height: 100%;
-  background-color: #FFffff;
-  position: relative;
-  background-image: url("../../../../assets/images/Vector1.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .sidenav-content {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.example-sidenav {
-  background-color: #CDB4DB;
-  width: 250px;
-}
-
-#container-nav {
+.container-nav {
   position: relative;
 }
 
 .block-presentation {
   display: flex;
   align-items: center;
-  max-width: 650px;
-  margin-bottom: 15%;
+  max-width: 70%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 640px) {
+  .block-presentation {
+    margin-top: 50vh;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .block-presentation {
+    margin-bottom: 25%;
+    min-width: 80%;
+  }
 }
 
-#img-presentation {
+.img-presentation {
   border-radius: 50%;
   float: right;
   shape-outside: margin-box;
@@ -94,42 +44,62 @@ table {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#img-presentation #bg-img {
-  background-image: url("../../../../assets/images/Vector-bg.svg");
+.img-presentation .bg-img {
+  background-image: url("/assets/images/Vector-bg.svg");
 }
 
-#text-presentation {
+.text-presentation {
   line-height: 1.4;
+  margin-top: 15%;
+  margin-bottom: 10%;
 }
 
-#logo {
+.logo {
   width: 100px;
-  margin-bottom: 40%;
+  margin-bottom: 38%;
   position: absolute;
 }
+@media screen and (max-width: 640px) {
+  .logo {
+    display: flex;
+    margin-bottom: 80vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    margin-bottom: 80vh;
+  }
+}
 
-#logo-nav {
+.logo-nav {
   width: 100px;
   margin-left: 30%;
 }
 
 .group-card {
   position: absolute;
-  margin-top: 40%;
-  margin-left: 5%;
-  width: 800px;
-  height: 250px;
+  margin-top: 50%;
+  margin-inline: 5%;
+  width: 80%;
+  height: 40%;
+  max-height: 100%;
+}
+@media screen and (max-width: 640px) {
+  .group-card {
+    height: 200%;
+    margin-top: 230vh;
+  }
 }
 
-#card-bleue {
+.card-bleue {
   position: absolute;
 }
 
-#card-verte {
+.card-verte {
   position: absolute;
 }
 
-#titre-bienvenue {
+.titre-bienvenue {
   position: absolute;
   margin-left: 50%;
   font-family: "Euphoria Script";
@@ -138,11 +108,28 @@ table {
   margin-top: 1%;
   font-weight: bold;
 }
+@media screen and (max-width: 640px) {
+  .titre-bienvenue {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 115%;
+  }
+}
 
-#text-group {
+.text-group {
   position: absolute;
   float: left;
   shape-outside: margin-box;
-  margin-left: 50%;
-  margin-top: 10%;
+  margin-left: 30%;
+  margin-top: 7%;
+  line-height: 2;
+  padding-right: 2%;
+}
+@media screen and (max-width: 640px) {
+  .text-group {
+    height: 100%;
+    margin-top: 130%;
+    margin-left: 0%;
+  }
 }/*# sourceMappingURL=card-home.component.css.map */

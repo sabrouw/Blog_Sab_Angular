@@ -18,13 +18,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './public/components/navbar/navbar.component';
+
 import { HomeComponent } from './public/pages/home/home.component';
 import { FooterComponent } from './public/components/footer/footer.component';
 import { ButtonComponent } from './public/components/button/button.component';
 import { ProjectsComponent } from './public/components/projects/projects.component';
 import { CardHomeComponent } from './public/components/card-home/card-home.component';
-import { CardLangagesComponent } from './public/components/card-langages/card-langages.component';
+import { FormationComponent } from './public/components/formation/formation.component';
+import { NavbarComponent } from './public/components/navbar/navbar.component';
+
 
 
 
@@ -39,7 +41,7 @@ import { CardLangagesComponent } from './public/components/card-langages/card-la
     ButtonDirective,
     ProjectsComponent,
     CardHomeComponent,
-    CardLangagesComponent,
+    FormationComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,9 +58,7 @@ import { CardLangagesComponent } from './public/components/card-langages/card-la
     MatIconModule,
     LayoutModule
   ],
-  providers: [
-    ArticlesService,
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

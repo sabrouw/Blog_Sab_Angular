@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardLangagesComponent } from './card-langages.component';
+import { FormationComponent } from './formation.component';
 
-describe('CardLangagesComponent', () => {
-  let component: CardLangagesComponent;
-  let fixture: ComponentFixture<CardLangagesComponent>;
+describe('FormationComponent', () => {
+  let component: FormationComponent;
+  let fixture: ComponentFixture<FormationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CardLangagesComponent ]
+      declarations: [ FormationComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CardLangagesComponent);
+    fixture = TestBed.createComponent(FormationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

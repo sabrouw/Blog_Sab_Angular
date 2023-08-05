@@ -104,7 +104,7 @@
 
 .projects__title > * {
   display: flex;
-  margin-top: 40%;
+  margin-top: 50%;
 }
 @media screen and (max-width: 640px) {
   .projects__title > * {

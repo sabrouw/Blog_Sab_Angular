@@ -4,6 +4,7 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 60px;
+  
   @media screen and (max-width: 640px) {
     height: 100%;
     margin-left: 0;
@@ -90,7 +91,7 @@
 
 .projects__title > * {
   display: flex;
-  margin-top: 40%;
+  margin-top: 50%;
   @media screen and (max-width: 640px) {
     margin-left: 35%;
   }

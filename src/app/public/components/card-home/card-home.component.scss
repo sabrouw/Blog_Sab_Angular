@@ -17,9 +17,9 @@
 .block-presentation {
   display: flex;
   align-items: center;
-  max-width: 70%;
-  margin-left: 5%;
-  margin-bottom: 10%;
+  max-width: 67%;
+  margin-top: 10%;
+
   @media screen and (max-width: 640px) {
     margin-top: 50vh;
     margin-left: 0;
@@ -35,7 +35,7 @@
   border-radius: 50%;
   float: right;
   shape-outside: margin-box;
-  margin: 0% 0% 0% 10%;
+  margin: 0% 0% 0% 3%;
   object-fit: cover;
 
   .bg-img {
@@ -46,11 +46,12 @@
   line-height: 1.4;
   margin-top: 15%;
   margin-bottom: 10%;
+  font-size: 17px;
 }
 
 .logo {
-  width: 100px;
-  margin-bottom: 38%;
+  width: 150px;
+  margin-bottom: 30%;
   position: absolute;
   @media screen and (max-width: 640px) {
     display: flex;
@@ -68,9 +69,9 @@
 
 .group-card {
   position: absolute;
-  margin-top: 50%;
+  margin-top: 65%;
   margin-inline: 5%;
-  width: 80%;
+  width: 67%;
   height: 40%;
   max-height: 100%;
   @media screen and (max-width: 640px) {
@@ -104,7 +105,7 @@
   position: absolute;
   float: left;
   shape-outside: margin-box;
-  margin-left: 30%;
+  margin-left: 35%;
   margin-top: 7%;
   line-height: 2;
   padding-right: 2%;

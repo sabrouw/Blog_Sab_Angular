@@ -16,6 +16,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 
@@ -56,7 +57,8 @@ import { NavbarComponent } from './public/components/navbar/navbar.component';
     MatTooltipModule,
     MatMenuModule,
     MatIconModule,
-    LayoutModule
+    LayoutModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

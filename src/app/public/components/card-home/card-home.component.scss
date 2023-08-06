@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
 }
 
 .container-nav {
@@ -18,44 +19,51 @@
   display: flex;
   align-items: center;
   max-width: 67%;
-  margin-top: 10%;
-
-  @media screen and (max-width: 640px) {
-    margin-top: 50vh;
+  margin-top: 5%;
+  height: 45%;
+  margin-bottom: 10%;
+  @media screen and (max-width: 576px) {
+    margin-top: 220vh;
     margin-left: 0;
     display: flex;
     flex-direction: column-reverse;
   }
+  @media screen and (max-width: 767px) {
+    margin-top: 220vh;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 0;
+  }
   @media screen and (max-width: 1200px) {
-    margin-bottom: 25%;
-    min-width: 80%;
+    min-width: 70%;
   }
 }
 .img-presentation {
-  border-radius: 50%;
   float: right;
   shape-outside: margin-box;
   margin: 0% 0% 0% 3%;
   object-fit: cover;
-
-  .bg-img {
-    background-image: url("/assets/images/Vector-bg.svg");
-  }
 }
 .text-presentation {
   line-height: 1.4;
   margin-top: 15%;
   margin-bottom: 10%;
   font-size: 17px;
+  @media screen and (max-width: 1200px) {
+    min-width: 75%;
+  }
 }
 
 .logo {
   width: 150px;
-  margin-bottom: 30%;
+  margin-bottom: 40%;
   position: absolute;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 576px) {
     display: flex;
-    margin-bottom: 80vh;
+    margin-bottom: 100vh;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 5%;
   }
   @media screen and (max-width: 1200px) {
     margin-bottom: 80vh;
@@ -69,21 +77,48 @@
 
 .group-card {
   position: absolute;
-  margin-top: 65%;
+  margin-top: 60%;
   margin-inline: 5%;
+  margin-bottom: 10%;
   width: 67%;
-  height: 40%;
+  height: 45%;
   max-height: 100%;
-  @media screen and (max-width: 640px) {
-    height: 200%;
-    margin-top: 230vh;
+  padding: 1%;
+  @media screen and (max-width: 576px) {
+    min-height: 170vh;
+    margin-top: 450vh;
+    min-width: 90%;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 320vh;
+    min-width: 95%;
+    min-height: 70vh;
+  }
+  @media screen and (max-width: 1200px) {
+    min-width: 90%;
+    min-height: 50vh;
+    margin-top: 150vh;
   }
 }
 .card-bleue {
   position: absolute;
+  @media screen and (max-width: 576px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 70%;
+  }
 }
 .card-verte {
   position: absolute;
+  @media screen and (max-width: 576px) {
+    width: 95%;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 70%;
+  }
 }
 
 .titre-bienvenue {
@@ -94,7 +129,7 @@
   transform: rotate(-12.31deg);
   margin-top: 1%;
   font-weight: bold;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 576px) {
     text-align: center;
     width: 100%;
     margin-left: 0;
@@ -108,11 +143,17 @@
   margin-left: 35%;
   margin-top: 7%;
   line-height: 2;
-  padding-right: 2%;
-
-  @media screen and (max-width: 640px) {
+  padding-right: 5%;
+  @media screen and (max-width: 576px) {
     height: 100%;
     margin-top: 130%;
     margin-left: 0%;
   }
+  @media screen and (max-width: 767px) {
+    padding-left: 8%;
+  }
+}
+
+article {
+  margin-right: 50%;
 }

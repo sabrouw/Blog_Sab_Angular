@@ -17,6 +17,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { AppComponent } from './app.component';
 
@@ -27,6 +31,10 @@ import { ProjectsComponent } from './public/components/projects/projects.compone
 import { CardHomeComponent } from './public/components/card-home/card-home.component';
 import { FormationComponent } from './public/components/formation/formation.component';
 import { NavbarComponent } from './public/components/navbar/navbar.component';
+import { FormContactComponent } from './public/components/form-contact/form-contact.component';
+import { ContactComponent } from './public/pages/contact/contact.component';
+import { HeaderComponent } from './public/components/dumb/header/header.component';
+import { CardProjectsComponent } from './public/components/card-projects/card-projects.component';
 
 
 
@@ -43,6 +51,10 @@ import { NavbarComponent } from './public/components/navbar/navbar.component';
     ProjectsComponent,
     CardHomeComponent,
     FormationComponent,
+    FormContactComponent,
+    ContactComponent,
+    HeaderComponent,
+    CardProjectsComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,7 +70,11 @@ import { NavbarComponent } from './public/components/navbar/navbar.component';
     MatMenuModule,
     MatIconModule,
     LayoutModule,
-    MatDividerModule
+    MatDividerModule,
+    MatProgressSpinnerModule,
+    MatSelectModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

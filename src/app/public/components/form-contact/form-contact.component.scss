@@ -1,0 +1,42 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  justify-self: center;
+  margin: auto;
+  margin-top: 10%;
+  background: rgb(47, 62, 70);
+  background: linear-gradient(
+    90deg,
+    rgba(47, 62, 70, 1) 0%,
+    rgba(189, 224, 254, 1) 50%,
+    rgba(101, 74, 117, 1) 100%
+  );
+  padding: 5%;
+  position: relative;
+  border-radius: 15px;
+  @media screen and (max-width: 767px) {
+    min-width: 90%;
+  }
+  @media screen and (max-width: 1200px) {
+    max-width: 70%;
+  }
+}
+mat-form-field {
+  width: 50%;
+}
+.container__img__form {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-self: flex-end;
+  margin-left: 60%;
+}
+.title__form {
+  color: #bde0fe;
+  font-family: "Euphoria Script";
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 5%;
+}

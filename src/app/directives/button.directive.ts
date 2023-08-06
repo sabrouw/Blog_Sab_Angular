@@ -11,7 +11,6 @@ export class ButtonDirective {
    }
 
   setColor(color: string){
-    /*on accede à l'élément natif du dome*/
     this.el.nativeElement.style.backgroundColor  = '#654A75';
     this.el.nativeElement.style.color ='white'
   }

@@ -2,10 +2,10 @@
   <mat-drawer #drawer class="nav-sidenav" mode="side">
     <img class="logo-nav" src="/assets/images/Logo.svg" alt="logo ellecode" />
     <mat-grid-list cols="1" rowHeight="3:1">
-      <mat-grid-tile>Contact</mat-grid-tile>
-      <mat-grid-tile>Articles</mat-grid-tile>
-      <mat-grid-tile>Veille</mat-grid-tile>
-      <mat-grid-tile><a routerLink="experience">Expériences</a></mat-grid-tile>
+      <mat-grid-tile><a routerLink="/">Accueil</a></mat-grid-tile>
+      <mat-grid-tile><a routerLink="/articles">Articles</a></mat-grid-tile>
+      <mat-grid-tile><a routerLink="/projets">Expériences</a></mat-grid-tile>
+      <mat-grid-tile><a routerLink="/contact">Contact</a></mat-grid-tile>
       <mat-grid-tile
         ><a
           class=".navbar__button__close"
@@ -13,26 +13,18 @@
           matTooltip="fermer menu"
           aria-label="infos"
           (click)="drawer.toggle()"
-        >
-          <img
-            class="navbar__button__close"
-            width="20"
-            src="/assets/images/marque-de-croix.png "
-            alt="icon-burger"
-          /> </a
+        ><i class="fa-solid fa-rectangle-xmark navbar__button__close"
+         style="color: #654A75;"></i>
+          </a
       ></mat-grid-tile>
     </mat-grid-list>
-
-
   </mat-drawer>
 
   <mat-drawer-content>
-    <button (click)="scrollToTop()" class="scroll-to-top-button" *ngIf="showButton">Remonter en haut</button>
-
+    <app-header></app-header>
     <a
       class="navbar__button__ensavoirplus"
-      type="button"
-      matTooltip="Clique ici pour voir la suite"
+      matTooltip="Accès menu"
       [matTooltipDisabled]="disabled.value"
       aria-label="infos"
       (click)="drawer.toggle()"
@@ -40,9 +32,6 @@
       <img src="/assets/images/burger.svg" alt="icon-burger" />
     </a>
     <router-outlet></router-outlet>
-    <app-projects  ></app-projects>
-    <app-footer></app-footer>
-
 
   </mat-drawer-content>
 </mat-drawer-container>

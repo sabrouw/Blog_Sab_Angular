@@ -1,0 +1,117 @@
+[debug] [2023-08-06T11:11:27.990Z] ----------------------------------------------------------------------
+[debug] [2023-08-06T11:11:27.992Z] Command:       D:\Program Files\Nodejs\node.exe D:\Utilisateurs\Appdata\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2023-08-06T11:11:27.993Z] CLI Version:   12.4.5
+[debug] [2023-08-06T11:11:27.993Z] Platform:      win32
+[debug] [2023-08-06T11:11:27.993Z] Node Version:  v18.16.1
+[debug] [2023-08-06T11:11:27.994Z] Time:          Sun Aug 06 2023 13:11:27 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2023-08-06T11:11:27.995Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-06T11:11:28.078Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-06T11:11:28.079Z] > authorizing via signed-in user (sabrinadzzz@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\PROJET-PERSO\BLOG_BACK_FRONT\Blog_Sab_Angular
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-06T11:11:28.262Z] Using project from CLI flag: ellecode
+[debug] [2023-08-06T11:11:28.265Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ellecode [none]
+[debug] [2023-08-06T11:11:28.665Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ellecode 200
+[debug] [2023-08-06T11:11:28.665Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ellecode {"projectId":"ellecode","projectNumber":"603235843032","displayName":"ElleCode","name":"projects/ellecode","resources":{"hostingSite":"ellecode"},"state":"ACTIVE","etag":"1_9fd80544-3a3b-4c0e-b8a6-2230a36d90df"}
+[info] i  Using project ellecode (ElleCode) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at D:\PROJET-PERSO\BLOG_BACK_FRONT\Blog_Sab_Angular 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=989398568&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-08-06T11:11:29.890Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-08-06T11:11:29.890Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-08-06T11:11:30.168Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-08-06T11:11:30.168Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-08-06T11:11:30.193Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-08-06T11:11:30.482Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-08-06T11:11:30.482Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"sabrouw","id":91209960,"node_id":"MDQ6VXNlcjkxMjA5OTYw","avatar_url":"https://avatars.githubusercontent.com/u/91209960?v=4","gravatar_id":"","url":"https://api.github.com/users/sabrouw","html_url":"https://github.com/sabrouw","followers_url":"https://api.github.com/users/sabrouw/followers","following_url":"https://api.github.com/users/sabrouw/following{/other_user}","gists_url":"https://api.github.com/users/sabrouw/gists{/gist_id}","starred_url":"https://api.github.com/users/sabrouw/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sabrouw/subscriptions","organizations_url":"https://api.github.com/users/sabrouw/orgs","repos_url":"https://api.github.com/users/sabrouw/repos","events_url":"https://api.github.com/users/sabrouw/events{/privacy}","received_events_url":"https://api.github.com/users/sabrouw/received_events","type":"User","site_admin":false,"name":"Sabrina.Bel","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":12,"public_gists":0,"followers":4,"following":5,"created_at":"2021-09-22T15:42:31Z","updated_at":"2023-08-06T10:56:31Z","private_gists":0,"total_private_repos":29,"owned_private_repos":29,"disk_usage":169355,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] +  Success! Logged into GitHub as sabrouw 
+[info] 
+[debug] [2023-08-06T11:31:12.980Z] >>> [apiv2][query] GET https://api.github.com/repos/git@github.com:sabrouw/Blog_Sab_Angular.git/actions/secrets/public-key type=owner
+[debug] [2023-08-06T11:31:13.201Z] <<< [apiv2][status] GET https://api.github.com/repos/git@github.com:sabrouw/Blog_Sab_Angular.git/actions/secrets/public-key 404
+[debug] [2023-08-06T11:31:13.201Z] <<< [apiv2][body] GET https://api.github.com/repos/git@github.com:sabrouw/Blog_Sab_Angular.git/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-08-06T11:34:36.567Z] >>> [apiv2][query] GET https://api.github.com/repos/git@github.com:sabrouw/Blog_Sab_Angular.githttps://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key type=owner
+[debug] [2023-08-06T11:34:36.803Z] <<< [apiv2][status] GET https://api.github.com/repos/git@github.com:sabrouw/Blog_Sab_Angular.githttps://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key 404
+[debug] [2023-08-06T11:34:36.803Z] <<< [apiv2][body] GET https://api.github.com/repos/git@github.com:sabrouw/Blog_Sab_Angular.githttps://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-08-06T11:34:50.558Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key type=owner
+[debug] [2023-08-06T11:34:50.778Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key 404
+[debug] [2023-08-06T11:34:50.779Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-08-06T11:35:01.905Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key type=owner
+[debug] [2023-08-06T11:35:02.104Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key 404
+[debug] [2023-08-06T11:35:02.105Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-08-06T11:35:02.113Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key type=owner
+[debug] [2023-08-06T11:35:02.316Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key 404
+[debug] [2023-08-06T11:35:02.316Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-08-06T11:35:02.389Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key type=owner
+[debug] [2023-08-06T11:35:02.592Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key 404
+[debug] [2023-08-06T11:35:02.592Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/sabrouw/Blog_Sab_Angular/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 

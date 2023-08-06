@@ -23,19 +23,19 @@
   height: 45%;
   margin-bottom: 10%;
   @media screen and (max-width: 576px) {
-    margin-top: 220vh;
+    margin-top: 150vh;
     margin-left: 0;
     display: flex;
     flex-direction: column-reverse;
   }
-  @media screen and (max-width: 767px) {
-    margin-top: 220vh;
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+    margin-top: 180vh;
     display: flex;
     flex-direction: column-reverse;
     margin-left: 0;
   }
-  @media screen and (max-width: 1200px) {
-    min-width: 70%;
+  @media screen and (min-width: 1200px) {
+    width: 70%;
   }
 }
 .img-presentation {
@@ -49,9 +49,8 @@
   margin-top: 15%;
   margin-bottom: 10%;
   font-size: 17px;
-  @media screen and (max-width: 1200px) {
-    min-width: 75%;
-  }
+  text-justify: auto;
+
 }
 
 .logo {
@@ -60,12 +59,12 @@
   position: absolute;
   @media screen and (max-width: 576px) {
     display: flex;
-    margin-bottom: 100vh;
+    margin-bottom: 80vh;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 991px) {
     margin-top: 5%;
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 80vh;
   }
 }
@@ -85,19 +84,20 @@
   max-height: 100%;
   padding: 1%;
   @media screen and (max-width: 576px) {
-    min-height: 170vh;
-    margin-top: 450vh;
+    margin: auto;
+    height: 70hv;
+    min-height: 110%;
+    margin-top:300vh;
     min-width: 90%;
-    display: flex;
-    align-items: center;
+
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 991px){
     margin-top: 320vh;
     min-width: 95%;
     min-height: 70vh;
   }
-  @media screen and (max-width: 1200px) {
-    min-width: 90%;
+  @media screen and (min-width: 1200px) {
+    min-width: 70%;
     min-height: 50vh;
     margin-top: 150vh;
   }
@@ -105,19 +105,22 @@
 .card-bleue {
   position: absolute;
   @media screen and (max-width: 576px) {
-    width: 80%;
+margin-left: 20%;
+
   }
-  @media screen and (max-width: 767px) {
-    max-width: 70%;
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+
   }
 }
 .card-verte {
   position: absolute;
   @media screen and (max-width: 576px) {
-    width: 95%;
+    width: 60%;
+    margin-left: 20%;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 991px){
     max-width: 70%;
+
   }
 }
 
@@ -133,7 +136,7 @@
     text-align: center;
     width: 100%;
     margin-left: 0;
-    margin-top: 115%;
+    margin-top: 70%;
   }
 }
 .text-group {
@@ -146,14 +149,36 @@
   padding-right: 5%;
   @media screen and (max-width: 576px) {
     height: 100%;
-    margin-top: 130%;
     margin-left: 0%;
+    margin-top: 85%;
+    padding-left: 5%;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
     padding-left: 8%;
   }
 }
 
 article {
   margin-right: 50%;
+}
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 60px;
+  color: black;
+  @media screen and (max-width: 576px) {
+    margin-left: 0;
+    margin-top: 10%;
+    padding: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    margin-top: 10%;
+    min-width: 90%;
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 90%;
+  }
 }

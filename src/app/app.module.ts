@@ -35,6 +35,7 @@ import { FormContactComponent } from './public/components/form-contact/form-cont
 import { ContactComponent } from './public/pages/contact/contact.component';
 import { HeaderComponent } from './public/components/dumb/header/header.component';
 import { CardProjectsComponent } from './public/components/card-projects/card-projects.component';
+import { CardBannersComponent } from './public/components/card-banners/card-banners.component';
 
 
 
@@ -55,6 +56,7 @@ import { CardProjectsComponent } from './public/components/card-projects/card-pr
     ContactComponent,
     HeaderComponent,
     CardProjectsComponent,
+    CardBannersComponent,
   ],
   imports: [
     BrowserModule,

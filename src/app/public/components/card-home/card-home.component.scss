@@ -2,10 +2,21 @@
   font-family: Euphoria script;
   src: url("/assets/fonts/EuphoriaScript-Regular.ttf") format("trueType");
 }
-.sidenav-content {
+.card_home_content {
   display: flex;
   flex-direction: column;
+
   position: relative;
+  height: 350vh;
+  min-height: 350vh;
+  background-color: #ff649f1b;
+  @media screen and (max-width: 766px) {
+    height: 530vh;
+    min-height: 530vh;
+  }
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+    margin-bottom: 70%;
+  }
 }
 
 .logo {
@@ -21,24 +32,27 @@
   @media screen and (min-width: 767px) and (max-width: 991px) {
     margin-bottom: 70%;
   }
-  @media screen and (min-width: 992px) and (max-width: 1200px) {
-
-  }
 }
 
-
-.projects{
+.projects {
   position: absolute;
   width: 90%;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-left: 5%;
+  @media screen and (max-width: 766px) {
+    margin-left: 2%;
+  }
 }
 
-.form_contact{
+.form_contact {
   position: absolute;
   width: 90%;
-  margin-top: 55%;
+  margin-top: 50%;
   margin-bottom: 15%;
   margin-left: 5%;
+  @media screen and (max-width: 766px) {
+    margin-top: 170vh;
+    width: 80%;
+  }
 }

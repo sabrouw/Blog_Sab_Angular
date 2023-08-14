@@ -1,4 +1,5 @@
-.footer{
+.footer {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,12 +7,12 @@
   width: 100%;
   height: 200px;
   bottom: 0;
-  background-color: #CDB4DB;
+  background-color: #cdb4db;
   text-align: center;
-  position: absolute;
+  margin-top: 800vh;
   z-index: -2;
 }
 
-
-
-
+.fa-brands {
+  box-shadow: 5px 5px 15px #271f2c69;
+}

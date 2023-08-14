@@ -1,6 +1,6 @@
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ButtonDirective } from './directives/button.directive';
-import { ArticlesService } from './protected/services/articles/articles.service';
+
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -33,7 +33,6 @@ import { FooterComponent } from './public/components/footer/footer.component';
 import { ButtonComponent } from './public/components/button/button.component';
 import { ProjectsComponent } from './public/components/projects/projects.component';
 import { CardHomeComponent } from './public/components/card-home/card-home.component';
-import { NavbarComponent } from './public/components/navbar/navbar.component';
 import { FormContactComponent } from './public/components/form-contact/form-contact.component';
 import { ContactComponent } from './public/pages/contact/contact.component';
 import { HeaderComponent } from './public/components/dumb/header/header.component';
@@ -42,6 +41,7 @@ import { CardBannersComponent } from './public/components/card-banners/card-bann
 import { CardBienvenueComponent } from './public/components/card-bienvenue/card-bienvenue.component';
 import { GaleryProjectsComponent } from './public/galery-projects/galery-projects.component';
 import { CardPresentationComponent } from './public/components/card-presentation/card-presentation.component';
+import { NavComponent } from './public/components/nav/nav.component';
 
 
 
@@ -65,7 +65,6 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     HomeComponent,
     FooterComponent,
     ButtonComponent,
@@ -79,7 +78,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     CardBannersComponent,
     CardBienvenueComponent,
     GaleryProjectsComponent,
-    CardPresentationComponent
+    CardPresentationComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

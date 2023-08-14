@@ -3,6 +3,15 @@
   src: url("/assets/fonts/EuphoriaScript-Regular.ttf") format("trueType");
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: fit-content;
+  margin: 0;
+}
 
 html,
 body,
@@ -130,20 +139,8 @@ a:link,
 :active,
 :focus {
   text-decoration: none;
-  color: black;
 }
 
 a {
   cursor: pointer;
-}
-html,
-body {
-  height:100%;
-  width: 100%;
-
-}
-body {
-  
-  margin: 0;
-
 }

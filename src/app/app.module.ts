@@ -21,6 +21,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { NgxUiLoaderModule, NgxUiLoaderConfig,
+  SPINNER,
+  POSITION,
+  PB_DIRECTION, } from "ngx-ui-loader";
 
 import { AppComponent } from './app.component';
 
@@ -29,15 +33,32 @@ import { FooterComponent } from './public/components/footer/footer.component';
 import { ButtonComponent } from './public/components/button/button.component';
 import { ProjectsComponent } from './public/components/projects/projects.component';
 import { CardHomeComponent } from './public/components/card-home/card-home.component';
-import { FormationComponent } from './public/components/formation/formation.component';
 import { NavbarComponent } from './public/components/navbar/navbar.component';
 import { FormContactComponent } from './public/components/form-contact/form-contact.component';
 import { ContactComponent } from './public/pages/contact/contact.component';
 import { HeaderComponent } from './public/components/dumb/header/header.component';
 import { CardProjectsComponent } from './public/components/card-projects/card-projects.component';
 import { CardBannersComponent } from './public/components/card-banners/card-banners.component';
+import { CardBienvenueComponent } from './public/components/card-bienvenue/card-bienvenue.component';
+import { GaleryProjectsComponent } from './public/galery-projects/galery-projects.component';
+import { CardPresentationComponent } from './public/components/card-presentation/card-presentation.component';
 
 
+
+const ngxUiLoaderConfig: NgxUiLoaderConfig = {
+  bgsPosition: POSITION.bottomCenter,
+  bgsSize: 40,
+  fgsType: SPINNER.squareLoader,
+  pbDirection: PB_DIRECTION.leftToRight,
+  pbThickness: 5,
+  logoUrl: "",
+  fgsColor: '#CDB4DB',
+  pbColor:"#CDB4DB",
+  text:"ElleCode",
+  textColor:"#CDB4DB",
+  bgsColor:"#0000",
+  overlayColor:"rgb(0,0,0)"
+};
 
 
 
@@ -51,12 +72,14 @@ import { CardBannersComponent } from './public/components/card-banners/card-bann
     ButtonDirective,
     ProjectsComponent,
     CardHomeComponent,
-    FormationComponent,
     FormContactComponent,
     ContactComponent,
     HeaderComponent,
     CardProjectsComponent,
     CardBannersComponent,
+    CardBienvenueComponent,
+    GaleryProjectsComponent,
+    CardPresentationComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +99,9 @@ import { CardBannersComponent } from './public/components/card-banners/card-bann
     MatProgressSpinnerModule,
     MatSelectModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    BrowserModule,
+    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]

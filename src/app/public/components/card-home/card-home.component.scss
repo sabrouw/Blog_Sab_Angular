@@ -4,181 +4,41 @@
 }
 .sidenav-content {
   display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  margin: auto;
-}
-
-.container-nav {
   position: relative;
-}
-
-.block-presentation {
-  display: flex;
-  align-items: center;
-  max-width: 67%;
-  margin-top: 5%;
-  height: 45%;
-  margin-bottom: 10%;
-  @media screen and (max-width: 576px) {
-    margin-top: 150vh;
-    margin-left: 0;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  @media screen and (min-width: 767px) and (max-width: 991px) {
-    margin-top: 180vh;
-    display: flex;
-    flex-direction: column-reverse;
-    margin-left: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 70%;
-  }
-}
-.img-presentation {
-  float: right;
-  shape-outside: margin-box;
-  margin: 0% 0% 0% 3%;
-  object-fit: cover;
-}
-.text-presentation {
-  line-height: 1.4;
-  margin-top: 15%;
-  margin-bottom: 10%;
-  font-size: 17px;
-  text-justify: auto;
-
 }
 
 .logo {
   width: 150px;
-  margin-bottom: 40%;
+  margin-bottom: 38%;
   position: absolute;
-  @media screen and (max-width: 576px) {
+  display: flex;
+  align-self: center;
+  @media screen and (max-width: 766px) {
     display: flex;
-    margin-bottom: 80vh;
+    margin-bottom: 60vh;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
-    margin-top: 5%;
+    margin-bottom: 70%;
   }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 80vh;
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+
   }
 }
 
-.logo-nav {
-  width: 100px;
-  margin-left: 30%;
-}
 
-.group-card {
+.projects{
   position: absolute;
-  margin-top: 60%;
-  margin-inline: 5%;
-  margin-bottom: 10%;
-  width: 67%;
-  height: 45%;
-  max-height: 100%;
-  padding: 1%;
-  @media screen and (max-width: 576px) {
-    margin: auto;
-    height: 70hv;
-    min-height: 110%;
-    margin-top:300vh;
-    min-width: 90%;
-
-  }
-  @media screen and (min-width: 767px) and (max-width: 991px){
-    margin-top: 320vh;
-    min-width: 95%;
-    min-height: 70vh;
-  }
-  @media screen and (min-width: 1200px) {
-    min-width: 70%;
-    min-height: 50vh;
-    margin-top: 150vh;
-  }
+  width: 90%;
+  margin: auto;
+  margin-top: 15%;
+  margin-left: 5%;
 }
-.card-bleue {
+
+.form_contact{
   position: absolute;
-  @media screen and (max-width: 576px) {
-margin-left: 20%;
-
-  }
-  @media screen and (min-width: 767px) and (max-width: 991px) {
-
-  }
-}
-.card-verte {
-  position: absolute;
-  @media screen and (max-width: 576px) {
-    width: 60%;
-    margin-left: 20%;
-  }
-  @media screen and (min-width: 767px) and (max-width: 991px){
-    max-width: 70%;
-
-  }
-}
-
-.titre-bienvenue {
-  position: absolute;
-  margin-left: 50%;
-  font-family: "Euphoria Script";
-  font-size: 3rem;
-  transform: rotate(-12.31deg);
-  margin-top: 1%;
-  font-weight: bold;
-  @media screen and (max-width: 576px) {
-    text-align: center;
-    width: 100%;
-    margin-left: 0;
-    margin-top: 70%;
-  }
-}
-.text-group {
-  position: absolute;
-  float: left;
-  shape-outside: margin-box;
-  margin-left: 35%;
-  margin-top: 7%;
-  line-height: 2;
-  padding-right: 5%;
-  @media screen and (max-width: 576px) {
-    height: 100%;
-    margin-left: 0%;
-    margin-top: 85%;
-    padding-left: 5%;
-  }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    padding-left: 8%;
-  }
-}
-
-article {
-  margin-right: 50%;
-}
-.timeline {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 50px 60px;
-  color: black;
-  @media screen and (max-width: 576px) {
-    margin-left: 0;
-    margin-top: 10%;
-    padding: 0;
-  }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    margin-top: 10%;
-    min-width: 90%;
-    padding: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 90%;
-  }
+  width: 90%;
+  margin-top: 55%;
+  margin-bottom: 15%;
+  margin-left: 5%;
 }

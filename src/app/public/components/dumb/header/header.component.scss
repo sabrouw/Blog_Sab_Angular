@@ -1,17 +1,15 @@
 .header{
-  height: 1200px;
-  background-image: url('../../../../../assets/images/Vector-bg.svg');
+  height: 1240px;
+  background-image: url('/assets/images/bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 24px;
   top: 0;
   left: 0;
   right: 0;
-  z-index: -999;
+  z-index: -5;
   position: absolute;
 }

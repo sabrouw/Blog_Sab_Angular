@@ -16,13 +16,13 @@ export class NavbarComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.showButton = window.scrollY > 100; // Afficher le bouton lorsque la position de défilement est supérieure à 100px
+    this.showButton = window.scrollY > 100;
   }
 
   scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Pour un défilement fluide vers le haut
+      behavior: 'smooth'
     });
   }
   toggleSidebar(){

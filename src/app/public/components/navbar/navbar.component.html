@@ -3,8 +3,8 @@
     <img class="logo-nav" src="/assets/images/Logo.svg" alt="logo ellecode" />
     <mat-grid-list cols="1" rowHeight="3:1">
       <mat-grid-tile><a routerLink="/">Accueil</a></mat-grid-tile>
-      <mat-grid-tile><a routerLink="/articles">Articles</a></mat-grid-tile>
-      <mat-grid-tile><a routerLink="/projets">Expériences</a></mat-grid-tile>
+      <!--<mat-grid-tile><a routerLink="/articles">Articles</a></mat-grid-tile>
+      <mat-grid-tile><a routerLink="/projets">Expériences</a></mat-grid-tile>-->
       <mat-grid-tile><a routerLink="/contact">Contact</a></mat-grid-tile>
       <mat-grid-tile
         ><a
@@ -13,16 +13,19 @@
           matTooltip="fermer menu"
           aria-label="infos"
           (click)="drawer.toggle()"
-        ><i class="fa-solid fa-rectangle-xmark navbar__button__close"
-         style="color: #654A75;"></i>
-          </a
+          ><i
+            class="fa-solid fa-rectangle-xmark navbar__button__close"
+            style="color: #654a75"
+          ></i> </a
       ></mat-grid-tile>
     </mat-grid-list>
   </mat-drawer>
 
   <mat-drawer-content>
     <app-header></app-header>
+
     <a
+      style="position: absolute"
       class="navbar__button__ensavoirplus"
       matTooltip="Accès menu"
       [matTooltipDisabled]="disabled.value"
@@ -31,7 +34,8 @@
     >
       <img src="/assets/images/burger.svg" alt="icon-burger" />
     </a>
-    <router-outlet></router-outlet>
 
+    <router-outlet></router-outlet>
+    <app-footer class="footer"  style="bottom: 0; position:absolute; width:100%"></app-footer>
   </mat-drawer-content>
 </mat-drawer-container>

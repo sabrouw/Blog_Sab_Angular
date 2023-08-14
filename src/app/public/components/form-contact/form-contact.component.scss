@@ -1,38 +1,32 @@
 .form__container {
+  position: relative;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 75%;
   justify-content: center;
-  justify-self: center;
-  margin: auto;
-  margin-top: 10%;
-  background: rgb(47, 62, 70);
-  background: linear-gradient(
-    90deg,
-    rgba(47, 62, 70, 1) 0%,
-    rgba(189, 224, 254, 1) 50%,
-    rgba(101, 74, 117, 1) 100%
-  );
-  box-shadow: 5px 5px 15px 5px;
-  margin-top: 10%;
+  background-image: url("/assets/images/groupe_bulle.png");
+  background-size: cover;
+  box-shadow: 15px 10px 15px 5px rgba(0, 0, 0, 0.215);
   padding: 5%;
-  position: relative;
   border-radius: 15px;
-  width: 70%;
-  @media (max-width: 576px) {
-    margin-top: 10%;
-    width: 90%;
+  @media (max-width: 766px) {
+    margin-top: 80%;
+    min-width: 95%;
+    width: 95%;
+    margin-bottom: 10%;
   }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: 767px) and (max-width: 991px) {
     min-width: 90%;
+    margin-top:50vh;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
     max-width: 80%;
   }
 }
 mat-form-field {
   width: 50%;
-  @media (max-width: 576px) {
+  @media (max-width: 766px) {
     width: 90%;
     margin: auto;
   }
@@ -43,12 +37,14 @@ mat-form-field {
   position: absolute;
   justify-self: flex-end;
   margin-left: 60%;
-  opacity: 0.8;
-  @media (max-width: 576px) {
+  border-radius: 50%;
+  border: solid 15px #cdb4db46;
+  opacity: 0.9;
+  @media (max-width: 766px) {
     visibility: hidden;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
     visibility: visible;
   }
 }

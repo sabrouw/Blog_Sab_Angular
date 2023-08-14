@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
   padding: 50px 60px;
   color: black;
   @media screen and (max-width: 576px) {
@@ -44,7 +43,7 @@
   padding: 15px;
   border-radius: 5%;
   box-shadow: #2f3e46 5px 5px 5px;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 766px) {
     width: 100%;
     margin-left: 0;
 
@@ -67,14 +66,14 @@
   border: 6px #654a75 solid;
   border-radius: 50%;
   z-index: 2;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 766px) {
     visibility: hidden;
     margin-right: 100%;
   }
 }
 .timeline article:nth-child(even) {
   margin-left: calc(55% + 0px);
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 766px) {
     margin-left: 0;
   }
 }
@@ -96,27 +95,29 @@
   margin-left: 44%;
   position: relative;
   margin-top: 50%;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 766px) {
     margin-left: 0;
     margin-right: 10%;
     margin-top: 120vh;
   }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: 767px) and (max-width: 991px) {
     margin-top: 90vh;
   }
 }
 
 .projects__container > * {
   display: flex;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 766px) {
     margin-left: 35%;
     margin-top:15%;
   }
-  @media screen and (min-width: 768px) and (max-width: 991px){
+  @media screen and (min-width: 767px) and (max-width: 991px){
     margin-right: 10%;
     min-width: 100%;
   }
+  @media screen and (min-width: 992px) and (max-width: 1200px){
 
+  }
 }
 
 .projects__container > h2 {

@@ -56,3 +56,21 @@ mat-form-field {
   font-weight: 300;
   margin-bottom: 5%;
 }
+.button_send_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.button_send{
+width: 20%;
+display: flex;
+justify-content: center;
+border: solid 2px linear-gradient(
+  90deg,
+  rgba(0, 0, 0, 1) 30%,
+  rgba(101, 74, 117, 1) 100%
+) ;
+
+
+}

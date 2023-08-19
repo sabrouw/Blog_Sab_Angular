@@ -1,13 +1,25 @@
 .galery_projects_container {
   background-color: black;
-  background-image: url("/assets/images/groupe_bulle.png");
   width: 100%;
-  margin: 0;
+  min-width: 100%;
   padding-bottom: 5%;
   padding-top: 2%;
-  margin-right: 5%;
-  margin-bottom: 10%;
-  border-radius: 50px;
+  margin-bottom: 10%;position: absolute;
+  @media (max-width: 400px) {
+    margin-left: 2%;
+
+   }
+
+  @media (max-width: 766px) {
+   margin-left: 2%;
+
+  }
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+  }
 
 }
 .galery {
@@ -48,6 +60,9 @@
   box-shadow: 0px 0px 15px 0px;
   background-color: black;
   margin: auto;
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+    width: fit-content;
+  }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     width: 500px;
     margin-right: 25%;
@@ -68,4 +83,13 @@
 }
 .galery_img {
   object-fit: cover;
+  @media screen and (max-width: 400px) {
+    max-width: 340PX;
+    width: 340px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+  }
 }

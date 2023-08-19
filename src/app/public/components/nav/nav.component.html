@@ -1,7 +1,27 @@
-<div class="nav_container">
+<header>
+<nav class="nav_container">
+
   <img width="100" class="logo" src="/assets/images/logo-degrade.svg" alt="logo ellecode" />
   <ul class="nav_content">
+    <li><button style="color:white" class="menu_button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon><i class="fa-solid fa-bars" style="color: white;"></i></mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button  mat-menu-item>
+        <mat-icon>menu</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu></li>
     <li class="nav_item"><a href="">CONTACT</a></li>
     <li class="nav_item"><a href="">ACCUEIL</a></li>
   </ul>
-</div>
+</nav>
+</header>

@@ -28,6 +28,11 @@
   padding: 8px;
   border: 2px solid transparent;
   animation: borderAnimation 3s infinite;
+  @media (max-width: 766px) {
+ 
+
+  }
+
 }
 ul li:first-child {
   color: #ffc8dd;

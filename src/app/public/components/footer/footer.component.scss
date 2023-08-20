@@ -1,4 +1,4 @@
-.footer {
+.footer_container {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -14,14 +14,15 @@
     rgba(101, 74, 117, 1) 100%
   );
   text-align: center;
-  margin-top: 800vh;
+
   @media (max-width: 766px) {
-    height: 120px;
+    min-height: 180px;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
-
+    min-height: 120px;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
+margin-top: 200vh;
 
   }
 }

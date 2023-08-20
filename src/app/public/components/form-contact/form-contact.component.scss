@@ -11,19 +11,26 @@
   box-shadow: 15px 10px 15px 5px rgba(0, 0, 0, 0.215);
   padding: 5%;
   border-radius: 15px;
-  @media (max-width: 766px) {
+  @media screen and (max-width: 400px) {
+    width: 95%;
+    margin-top: 0;
+    margin-right: 5%;
+    height: 100%;
+    margin-bottom: 5%;
+     }
+   @media screen and (min-width: 401px) and (max-width: 766px) {
     min-width: 100%;
-
     margin-bottom: 10%;
+   }
 
-  }
   @media screen and (min-width: 767px) and (max-width: 991px) {
     min-width: 90%;
-    margin-top:50vh;
+    margin-top: 50vh;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
-    max-width: 80%;
-    margin-top: 70vh;
+    width: 95%;
+    max-width: 90%;
+    margin-top:40vh;
   }
 }
 mat-form-field {
@@ -56,21 +63,17 @@ mat-form-field {
   font-weight: 300;
   margin-bottom: 5%;
 }
-.button_send_container{
+.button_send_container {
   width: 100%;
   display: flex;
   justify-content: center;
-
 }
-.button_send{
-width: 20%;
-display: flex;
-justify-content: center;
-border: solid 2px linear-gradient(
-  90deg,
-  rgba(0, 0, 0, 1) 30%,
-  rgba(101, 74, 117, 1) 100%
-) ;
-
-
+.button_send {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  border: #cdb4db solid px;
+  width: 100px;
+  background-color: white;
 }
+

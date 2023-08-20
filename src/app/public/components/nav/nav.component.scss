@@ -1,4 +1,4 @@
-.nav_container {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,33 +8,50 @@
     rgba(0, 0, 0, 1) 66%,
     rgba(101, 74, 117, 1) 100%
   );
+  z-index: 900;
+  height: 100%;
+
+@media screen and (max-width: 400px) {
+height: 25%;
+   }
+ @media screen and (min-width: 401px) and (max-width: 766px) {
+  height: 50%;
+ }
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
 }
-.nav_content {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  height: 75%;
+}
+}
+
+.container-fluid {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  width: 100%;
+  margin-left: 12%;
+  color: #ffc8dd;
 }
 .nav_item {
+  display: flex;
+  justify-content: center;
   margin-block: 35px;
-  margin-right: 70px;
+  margin-right: 15%;
   font-size: 16px;
   font-weight: bold;
   opacity: 0.6;
-
   padding-inline: 10px;
+
 }
 
-.nav_item :hover{
+.nav_item :hover {
   padding: 8px;
   border: 2px solid transparent;
   animation: borderAnimation 3s infinite;
-  @media (max-width: 766px) {
- 
-
-  }
-
 }
-ul li:first-child {
+div ul li:first-child {
   color: #ffc8dd;
 }
 a:link,
@@ -44,28 +61,61 @@ a:link,
   color: #ffc8dd;
 }
 .logo {
-  margin-left: 25px;
-  margin-top: 0px;
+  display: flex;
+  margin-right: 65%;
+  margin-top: 0;
+  @media screen and (max-width: 400px) {
+    margin-right: 65%;
+     }
+   @media screen and (min-width: 401px) and (max-width: 766px) {
+
+   }
+   @media screen and (min-width: 992px) and (max-width: 1200px) {
+    margin-right: 50%;
+    margin-top: 10px;
+   }
 }
 @keyframes borderAnimation {
   0% {
-      border-bottom-color: #ffc8dd;
-      border-right-color: transparent;
+    border-bottom-color: #ffc8dd;
+    border-right-color: transparent;
   }
   25% {
-      border-right-color: #ffc8dd;
-      border-bottom-color: transparent;
+    border-right-color: #ffc8dd;
+    border-bottom-color: transparent;
   }
   50% {
-      border-top-color: #ffc8dd;
-      border-right-color: transparent;
+    border-top-color: #ffc8dd;
+    border-right-color: transparent;
   }
   75% {
-      border-left-color: #ffc8dd;
-      border-top-color: transparent;
+    border-left-color: #ffc8dd;
+    border-top-color: transparent;
   }
   100% {
-      border-bottom-color: #bde0fe7f;
-      border-left-color: transparent;
+    border-bottom-color: #bde0fe7f;
+    border-left-color: transparent;
   }
+}
+.navbar-toggler {
+  top: 15px;
+  color: #ffc8dd;
+  background-color: #ffc8dd;
+}
+
+.button_return{
+
+  @media screen and (max-width: 400px) {
+
+  }
+  @media screen and (min-width: 401px) and (max-width: 766px) {
+
+
+  }
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+  }
+}
 }

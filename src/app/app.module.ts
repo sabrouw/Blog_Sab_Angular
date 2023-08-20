@@ -1,3 +1,4 @@
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ButtonDirective } from './directives/button.directive';
 
@@ -10,7 +11,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
-
 import {MatTooltipModule} from '@angular/material/tooltip'
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatMenuModule } from '@angular/material/menu';
@@ -27,7 +27,6 @@ import { NgxUiLoaderModule, NgxUiLoaderConfig,
   PB_DIRECTION, } from "ngx-ui-loader";
 
 import { AppComponent } from './app.component';
-
 import { HomeComponent } from './public/pages/home/home.component';
 import { FooterComponent } from './public/components/footer/footer.component';
 import { ButtonComponent } from './public/components/button/button.component';
@@ -42,6 +41,7 @@ import { CardBienvenueComponent } from './public/components/card-bienvenue/card-
 import { GaleryProjectsComponent } from './public/galery-projects/galery-projects.component';
 import { CardPresentationComponent } from './public/components/card-presentation/card-presentation.component';
 import { NavComponent } from './public/components/nav/nav.component';
+
 
 
 
@@ -102,6 +102,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     MatFormFieldModule,
     BrowserModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

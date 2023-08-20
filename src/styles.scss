@@ -1,3 +1,5 @@
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
 @font-face {
   font-family: Euphoria script;
   src: url("/assets/fonts/EuphoriaScript-Regular.ttf") format("trueType");
@@ -9,10 +11,10 @@ body {
   width: 100%;
 }
 body {
-  height: fit-content;
+  height: 100%;
   margin: 0;
 }
-
+/* début reset*/
 html,
 body,
 div,
@@ -97,8 +99,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 article,
@@ -144,6 +146,9 @@ a:link,
 a {
   cursor: pointer;
 }
-app-root{
- 
+/*fin reset*/
+
+app-root {
+  min-height: 100vh;
+  
 }

@@ -1,27 +1,35 @@
-.group-card {
+.group_card {
   display: flex;
   margin: auto;
-  width: 67%;
-  height: 315px;
-  max-height: 315px;
+  width: 70%;
+  height: 355px;
+  max-height: 360px;
   padding: 1%;
-  @media screen and (max-width: 766px) {
+  @media screen and (max-width: 400px) {
     display: flex;
     flex-direction: column;
     margin: auto;
-    height: 800px;
-    min-height: 800px;
+    margin-top: 2%;
+    height: 900px;
+    min-height: 900px;
+    min-width: 90%;
+    width:95%;
+  }
+  @media screen and (min-width: 401px) and (max-width: 766px) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 900px;
+    min-height: 900px;
     min-width: 90%;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
-    min-height: 350px;
+    min-height: 500px;
     height: 350px;
-    margin-top: 195%;
     min-width: 95%;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
-    min-width: 100%;
-    min-height: 50vh;
+    min-width: 90%;
   }
 }
 .card-bleue {
@@ -45,27 +53,40 @@
   font-family: "Euphoria Script";
   font-size: 3rem;
   transform: rotate(-12.31deg);
-  margin-top: 1%;
+  margin-top: 5px;
   font-weight: bold;
-  @media screen and (max-width: 766px) {
+  @media screen and (max-width: 400px) {
+    margin-top: 32vh;
+    margin-left: 15%;
+    width: 50%;
+    margin-right: 10%;
+  }
+  @media screen and (min-width: 401px) and (max-width: 766px) {
     text-align: center;
     width: 100%;
     margin-left: 0;
     margin-top: 75%;
   }
 }
-.text-group {
+.text_group {
   position: absolute;
   float: left;
   shape-outside: margin-box;
   margin-left: 35%;
-  margin-top: 7%;
+  margin-top: 5%;
   line-height: 2;
   padding-right: 5%;
-  @media screen and (max-width: 766px) {
+  @media screen and (max-width: 400px) {
     height: 100%;
     margin-left: 0%;
-    margin-top: 85%;
+    margin-top: 95%;
+    padding-left: 2%;
+  }
+
+  @media screen and (min-width: 401px) and (max-width: 766px) {
+    height: 100%;
+    margin-left: 0%;
+    margin-top:100%;
     padding-left: 5%;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {

@@ -3,22 +3,27 @@
   src: url("/assets/fonts/EuphoriaScript-Regular.ttf") format("trueType");
 }
 .card_home_content {
+  flex: 1; /* Les sections s'étendent pour remplir l'espace restant */
   display: flex;
   flex-direction: column;
-  position: relative;
-  height: 350vh;
-  min-height: 380vh;
+  height: 320%;
+  min-height: 320%;
   background-color: #ff649f1b;
-  @media screen and (max-width: 576px) {
-    height: 960vh;
-    min-height: 960vh;
+  @media screen and (max-width: 400px) {
+    height: 350%;
+    min-height: 350%;
   }
-  @media screen and (max-width: 766px) {
-    height: 960vh;
-    min-height: 960vh;
+  @media screen and (min-width: 401px) and (max-width: 766px) {
+    height: 50%;
+    min-height: 50%;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
-    margin-bottom: 70%;
+    height:250%;
+    min-height: 250%;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    height:450%;
+    min-height: 450%;
   }
 }
 
@@ -37,27 +42,51 @@
   }
 }
 
-.projects {
+.projects_section {
   position: absolute;
   width: 90%;
   margin: auto;
   margin-top: 10%;
   margin-left: 5%;
+  @media screen and (max-width: 400px) {
+    margin-top: 0;
+
+  }
   @media screen and (max-width: 766px) {
     margin: 0;
     margin-top: 5%;
+    width: 95%;
+  }
+  @media screen and (min-width: 767px) and (max-width: 991px) {
   }
 }
 
-.form_contact {
+.form_contact_section {
   position: absolute;
   width: 90%;
-  margin-top: 50%;
-  margin-bottom: 15%;
+  margin-top: 40%;
+  margin-bottom: 5%;
   margin-left: 5%;
-  @media screen and (max-width: 766px) {
-    margin-top: 280vh;
-    width: 85%;
-    margin-left: auto;
+  @media screen and (max-width: 400px) {
+    // margin-top: 20%;
+    margin-left: 0;
+    width: 95%;
+    min-width: 95%;
+
+  }
+  @media screen and (min-width: 401px) and (max-width: 766px) {
+    // margin-top: 100vh;
+    margin-left: 0;
+  }
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    min-width: 100%;
+    margin-left: 0%;
   }
 }
+.presentation {
+  margin-top: 5%;
+}
+

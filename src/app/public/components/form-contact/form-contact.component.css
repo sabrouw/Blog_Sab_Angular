@@ -1,0 +1,106 @@
+.form__container {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: center;
+  background-color: white;
+  background-image: url("/assets/images/groupe_bulle.png");
+  background-size: cover;
+  box-shadow: 15px 10px 15px 5px rgba(0, 0, 0, 0.215);
+  padding: 5%;
+  border-radius: 15px;
+}
+@media screen and (max-width: 400px) {
+  .form__container {
+    width: 95%;
+    margin-top: 0;
+    margin-right: 5%;
+    height: 100%;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 766px) {
+  .form__container {
+    min-width: 100%;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .form__container {
+    min-width: 90%;
+    margin-top: 50vh;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .form__container {
+    width: 95%;
+    max-width: 90%;
+    margin-top: 40vh;
+  }
+}
+
+mat-form-field {
+  width: 50%;
+}
+@media (max-width: 766px) {
+  mat-form-field {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.container__img__form {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-self: flex-end;
+  margin-left: 60%;
+  border-radius: 50%;
+  border: solid 15px rgba(205, 180, 219, 0.2745098039);
+  opacity: 0.9;
+}
+@media (max-width: 766px) {
+  .container__img__form {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container__img__form {
+    visibility: visible;
+  }
+}
+
+.title__form {
+  font-family: "Euphoria Script";
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 5%;
+}
+
+.button_send_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button_send {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  border: #cdb4db solid px;
+  width: 100px;
+  background-color: #cdb4db;
+  font-size: large;
+}
+
+textarea {
+  resize: none;
+}
+
+.form_send {
+  margin-top: 5px;
+  color: rgb(17, 94, 17);
+  font-weight: bold;
+}/*# sourceMappingURL=form-contact.component.css.map */

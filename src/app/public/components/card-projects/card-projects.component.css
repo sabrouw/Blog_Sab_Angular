@@ -1,0 +1,145 @@
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  padding: 50px 60px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .timeline {
+    margin-left: 0;
+    margin-top: 10%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .timeline {
+    margin-top: 10%;
+    min-width: 90%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .timeline {
+    max-width: 90%;
+  }
+}
+
+.timeline:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+  width: 8px;
+  background: #2f3e46;
+  border-radius: 3px;
+  z-index: 1;
+  color: #bde0fe;
+}
+@media screen and (max-width: 576px) {
+  .timeline:after {
+    visibility: hidden;
+  }
+}
+
+.timeline article {
+  position: relative;
+  background: rgba(189, 224, 254, 0.3098039216);
+  background-image: url("/assets/images/bleu-ciel-graf14.jpg");
+  background-size: 100%;
+  width: calc(50% - 50px);
+  padding: 15px;
+  border-radius: 5%;
+  box-shadow: #2f3e46 5px 5px 5px;
+}
+@media screen and (max-width: 766px) {
+  .timeline article {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.timeline article + article {
+  margin-top: 30px;
+}
+
+.timeline article:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 5px);
+  background: #bde0fe;
+  width: 24px;
+  height: 24px;
+  border: 6px #654a75 solid;
+  border-radius: 50%;
+  z-index: 2;
+}
+@media screen and (max-width: 766px) {
+  .timeline article:before {
+    visibility: hidden;
+    margin-right: 100%;
+  }
+}
+
+.timeline article:nth-child(even) {
+  margin-left: calc(55% + 0px);
+}
+@media screen and (max-width: 766px) {
+  .timeline article:nth-child(even) {
+    margin-left: 0;
+  }
+}
+
+.timeline article:nth-child(even):before {
+  left: auto;
+  right: calc(100% + 25px);
+}
+
+.timeline article:nth-child(even):after {
+  left: auto;
+  right: 100%;
+  border-left: none;
+  border-right: 16px solid #eeeeee;
+}
+
+.projects__container {
+  margin-left: 44%;
+  position: relative;
+  margin-top: 50%;
+}
+@media screen and (max-width: 766px) {
+  .projects__container {
+    margin-left: 0;
+    margin-right: 10%;
+    margin-top: 120vh;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .projects__container {
+    margin-top: 90vh;
+  }
+}
+
+.projects__container > * {
+  display: flex;
+}
+@media screen and (max-width: 766px) {
+  .projects__container > * {
+    margin-left: 35%;
+    margin-top: 15%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .projects__container > * {
+    margin-right: 10%;
+    min-width: 100%;
+  }
+}
+.projects__container > h2 {
+  font-family: "Euphoria Script";
+  font-weight: bold;
+  font-size: 3rem;
+}/*# sourceMappingURL=card-projects.component.css.map */

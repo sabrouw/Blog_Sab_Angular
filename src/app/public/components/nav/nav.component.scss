@@ -1,3 +1,4 @@
+@import "animate.css";
 .navbar {
   display: flex;
   flex-direction: row;
@@ -5,27 +6,41 @@
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 66%,
+    rgb(0, 0, 0) 66%,
     rgba(101, 74, 117, 1) 100%
   );
-  z-index: 900;
-  height: 100%;
+  z-index: 5;
+  padding-right: 30pX;
 
-@media screen and (max-width: 400px) {
-height: 25%;
-   }
- @media screen and (min-width: 401px) and (max-width: 766px) {
-  height: 50%;
- }
 
-@media screen and (min-width: 767px) and (max-width: 991px) {
+  @media screen and (max-width: 400px) {
+    height: 100%;
+  }
+  @media screen and (min-width: 401px) and (max-width: 766px) {
+    height: 50%;
+  }
 
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    height: 75%;
+  }
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  height: 75%;
-}
-}
+.navbar-nav{
+  height: 100px;
+  @media screen and (max-width: 400px) {
+    height: 250px;
+  }
+  @media screen and (min-width: 401px) and (max-width: 766px) {
+    height: 300px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+    height: 250px;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
 
+  }
+}
 .container-fluid {
   display: flex;
   justify-content: flex-end;
@@ -43,13 +58,13 @@ height: 25%;
   font-weight: bold;
   opacity: 0.6;
   padding-inline: 10px;
-
 }
 
 .nav_item :hover {
   padding: 8px;
   border: 2px solid transparent;
   animation: borderAnimation 3s infinite;
+  padding: 5px;
 }
 div ul li:first-child {
   color: #ffc8dd;
@@ -64,16 +79,16 @@ a:link,
   display: flex;
   margin-right: 65%;
   margin-top: 0;
+  animation-duration: 2s;
   @media screen and (max-width: 400px) {
     margin-right: 65%;
-     }
-   @media screen and (min-width: 401px) and (max-width: 766px) {
-
-   }
-   @media screen and (min-width: 992px) and (max-width: 1200px) {
+  }
+  @media screen and (min-width: 401px) and (max-width: 766px) {
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
     margin-right: 50%;
     margin-top: 10px;
-   }
+  }
 }
 @keyframes borderAnimation {
   0% {
@@ -103,19 +118,13 @@ a:link,
   background-color: #ffc8dd;
 }
 
-.button_return{
-
+.button_return {
   @media screen and (max-width: 400px) {
-
   }
   @media screen and (min-width: 401px) and (max-width: 766px) {
-
-
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
-
-  @media screen and (min-width: 992px) and (max-width: 1200px) {
-
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+    }
   }
-}
 }

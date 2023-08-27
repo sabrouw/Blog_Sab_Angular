@@ -2,24 +2,25 @@
   font-family: Euphoria script;
   src: url("/assets/fonts/EuphoriaScript-Regular.ttf") format("trueType");
 }
+
 .card_home_content {
   flex: 1; /* Les sections s'étendent pour remplir l'espace restant */
   display: flex;
   flex-direction: column;
-  height: 320%;
-  min-height: 320%;
-  background-color: #ff649f1b;
+  height: 420%;
+  min-height: 420%;
+  background-color: black;
   @media screen and (max-width: 400px) {
-    height: 350%;
-    min-height: 350%;
+    height: 600%;
+    min-height: 600%;
   }
   @media screen and (min-width: 401px) and (max-width: 766px) {
-    height: 50%;
-    min-height: 50%;
+    height: 480%;
+    min-height: 480%;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
-    height:250%;
-    min-height: 250%;
+    height:520%;
+    min-height:520%;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     height:450%;
@@ -46,11 +47,10 @@
   position: absolute;
   width: 90%;
   margin: auto;
-  margin-top: 10%;
   margin-left: 5%;
+  margin-top: -5%;
   @media screen and (max-width: 400px) {
-    margin-top: 0;
-
+    margin-top: 45% !important;
   }
   @media screen and (max-width: 766px) {
     margin: 0;
@@ -58,28 +58,29 @@
     width: 95%;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
+    margin-top: 1%;
   }
 }
 
 .form_contact_section {
   position: absolute;
   width: 90%;
-  margin-top: 40%;
+  margin-top: 60%;
   margin-bottom: 5%;
   margin-left: 5%;
   @media screen and (max-width: 400px) {
-    // margin-top: 20%;
+    margin-top: 260%;
     margin-left: 0;
     width: 95%;
     min-width: 95%;
 
   }
   @media screen and (min-width: 401px) and (max-width: 766px) {
-    // margin-top: 100vh;
+    margin-top: 230%;
     margin-left: 0;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
-    margin-bottom: 0;
+    margin-top: 70%;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     min-width: 100%;

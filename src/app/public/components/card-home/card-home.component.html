@@ -1,10 +1,14 @@
 <div class="card_home_content" style="position: relative">
   <mat-card-content class="container_home_content">
-    <div class="presentation"  id="section_accueil">
-      <app-card-presentation></app-card-presentation>
-    </div>
+
     <div style="margin-top: 50px; " class="bienvenue" id="bienvenue_section">
       <app-card-bienvenue></app-card-bienvenue>
+    </div>
+    <div style="margin: 0;">
+      <app-card-banners></app-card-banners>
+    </div>
+    <div class="presentation"  id="section_accueil">
+      <app-card-presentation></app-card-presentation>
     </div>
     <div class="projects_section" id="projects_section">
       <app-galery-projects></app-galery-projects>
@@ -12,6 +16,8 @@
     <div class="form_contact_section" id="section_contact">
       <app-form-contact></app-form-contact>
     </div>
-
+    <div>
+    <app-button    p-button class="button_return" style="position: fixed; margin-left:75%; margin-top: 50vh"></app-button>
+  </div>
   </mat-card-content>
 </div>

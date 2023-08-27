@@ -1,30 +1,31 @@
 
-<div class="form__container">
+<form [formGroup]="contactForm" class="form__container" id="contactForm">
   <h2 class="title__form">Contactez-moi</h2>
   <mat-form-field>
-    <mat-label>Nom</mat-label>
-    <input matInput>
+    <mat-label>Nom-Prénom</mat-label>
+    <input matInput formControlName="firstName" id="firstName">
   </mat-form-field>
   <mat-form-field>
-    <mat-label>Prénom</mat-label>
-    <input matInput>
+    <mat-label>Email</mat-label>
+    <input matInput id="email" formControlName="email" >
   </mat-form-field>
   <mat-form-field>
     <mat-label>Votre message</mat-label>
-    <textarea matInput></textarea>
+    <textarea matInput id="message" formControlName="message" rows="3"></textarea>
   </mat-form-field>
   <mat-form-field>
-<mat-select placeholder="Type de projet">
-    <mat-option [value]="">Refonte</mat-option>
-    <mat-option [value]="">Création de site vitrine</mat-option>
-    <mat-option [value]="">Création de E-Commerce</mat-option>
-    <mat-option [value]="">Dépannage</mat-option>
+<mat-select placeholder="Sujet" id="subject" formControlName="subject">
+    <mat-option value="Refonte">Refonte</mat-option>
+    <mat-option value="Création de site vitrine">Création de site vitrine</mat-option>
+    <mat-option value="Création de E-Commerce">Création de site E-Commerce</mat-option>
+    <mat-option value="Dépannage">Dépannage</mat-option>
+    <mat-option value="Conseils">Conseils</mat-option>
 </mat-select>
 
 </mat-form-field>
 
-<div class="button_send_container"><button class="button_send" mat-button>Envoyer</button></div>
-    <img class="container__img__form" width="200" src="/assets/images/DALL-E.png" alt="">
+<div class="button_send_container"><button [disabled]="contactForm.invalid" (click)="submitData(contactForm.value)" class="button_send" type="reset" mat-button>Envoyer</button></div>
+    <img class="container__img__form" width="200" src="/assets/images/2778464.jpg" alt="fille qui salut et qui est sur ordinateur très souriante">
+<p class="form_send" *ngIf="isSubmit" >{{ submitMessage }}</p>
 
-
-</div>
+</form>

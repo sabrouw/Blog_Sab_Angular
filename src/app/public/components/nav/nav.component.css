@@ -1,15 +1,16 @@
+@import "animate.css";
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 66%, rgb(101, 74, 117) 100%);
-  z-index: 900;
-  height: 100%;
+  z-index: 5;
+  padding-right: 30pX;
 }
 @media screen and (max-width: 400px) {
   .navbar {
-    height: 25%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 401px) and (max-width: 766px) {
@@ -23,6 +24,24 @@
   }
 }
 
+.navbar-nav {
+  height: 100px;
+}
+@media screen and (max-width: 400px) {
+  .navbar-nav {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 766px) {
+  .navbar-nav {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .navbar-nav {
+    height: 250px;
+  }
+}
 .container-fluid {
   display: flex;
   justify-content: flex-end;
@@ -47,6 +66,7 @@
   padding: 8px;
   border: 2px solid transparent;
   animation: borderAnimation 3s infinite;
+  padding: 5px;
 }
 
 div ul li:first-child {
@@ -64,6 +84,7 @@ a:link,
   display: flex;
   margin-right: 65%;
   margin-top: 0;
+  animation-duration: 2s;
 }
 @media screen and (max-width: 400px) {
   .logo {

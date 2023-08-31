@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-familly: "Poppins", sans-serif;
+}
+
 .galery_projects_container {
   width: 100%;
   min-width: 100%;
@@ -5,7 +12,9 @@
   padding-top: 2%;
   margin-bottom: 10%;
   position: absolute;
-  border-radius: 8%;
+  height: 700px;
+  margin-top: 10%;
+  color: rgba(255, 255, 255, 0.877);
 }
 @media (max-width: 400px) {
   .galery_projects_container {
@@ -28,6 +37,7 @@
   margin: 0;
   padding: 0;
   margin-left: 10%;
+  margin-bottom: -10%;
 }
 @media (max-width: 400px) {
   .galery {
@@ -54,14 +64,6 @@
     flex-direction: column;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .galery {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-}
-
 .title_projects {
   text-align: center;
   font-family: "Euphoria Script";
@@ -70,24 +72,18 @@
   transform: rotate(-12.31deg);
   display: flex;
   margin-left: 45%;
-  margin-top: 5%;
+  color: white;
 }
 @media screen and (max-width: 400px) {
   .title_projects {
-    margin-top: 8%;
+    visibility: hidden;
   }
 }
 @media screen and (min-width: 401px) and (max-width: 766px) {
   .title_projects {
-    margin-top: 8%;
+    padding-bottom: 10%;
+    margin-left: 35%;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-familly: "Poppins", sans-serif;
 }
 
 section {
@@ -99,38 +95,44 @@ section {
 
 .container {
   position: relative;
-  width: 1100px;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-warp: warp;
-  padding: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
   margin-top: -20%;
 }
 .container .card {
   position: relative;
   max-width: 300px;
   height: 215px;
-  background-color: #fff;
-  margin: 30px 10px;
-  padding: 20px 15px;
+  background-color: rgba(255, 255, 255, 0.8862745098);
+  margin: 60px 10px;
+  padding: 30px 15px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
   border-radius: 15px;
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container .card {
+    padding: 0;
+    margin: 0;
+  }
+}
 
 .container .card:hover {
-  height: 320px;
+  height: 310px;
 }
 
 .container .card .image {
   position: relative;
-  width: 260px;
+  width: 268px;
   height: 260px;
   top: -40%;
-  left: 8px;
+  left: 1px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -165,14 +167,22 @@ h3 {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .p2 {
   font-weight: bolder;
 }
 
-.fa-solid {
+.fa-code {
   background-color: #cdb4db;
   border-radius: 15px;
   padding: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.63);
+}
+
+.link a:link,
+:visited,
+:active,
+:focus {
+  text-decoration: underline;
+  color: #111;
+  cursor: pointer;
 }/*# sourceMappingURL=galery-projects.component.css.map */

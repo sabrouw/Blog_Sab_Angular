@@ -1,71 +1,25 @@
-<div class="sidenav-content">
-  <div class="bg-img"></div>
 
- <app-header></app-header>
+<div class="card_home_content" style="position: relative">
+  <mat-card-content class="container_home_content">
 
-  <img class="logo" src="/assets/images/Logo.svg" alt="logo ellecode" />
-
-  <div class="block-presentation">
-    <div class="text-presentation">
-      <p>
-        Je suis Sabrina jeune maman (depuis 2019 quand même) en poste de
-        secrétaire médicale, en 2021 j'entreprends de reprendre mes études pour
-        devenir développeuse d’application.
-      </p>
-
-      <p>
-        Passionée d'informatique depuis toujours, mon entourage me trouve douée
-        pour ça et sans m'en rendre compte je suis devenue l'agent technique de
-        tout le monde. J'ai décidé en 2021 de faire de ma passion une belle
-        expérience d'apprentissage en débutant une formation. Après obtention de
-        mon diplome je suis à la recherche de mon premier poste.
-      </p>
-      <p>
-        Dans ce blog je détail mon parcours professionnel, mes projets mais
-        aussi des passages personnels ou je parle de ma vie d'étudiante, et de
-        maman en poste.
-      </p>
-
-
+    <div style="margin-top: 50px; " class="bienvenue" id="bienvenue_section">
+      <app-card-bienvenue></app-card-bienvenue>
     </div>
-    <img
-      width="250"
-      class="img-presentation"
-      src="/assets/images/Ellipse2.png"
-      alt="ma tête"
-      matTooltip=" L'image est générée par une ia, à partir d’une de mes photos."
-      aria-label="Button that displays a tooltip when focused or hovered over"
-    />
-
-  </div>
-
-
-  <mat-card class="group-card">
-    <mat-card-content>
-      <img
-        class="card-bleue"
-        width="260"
-        src="/assets/images/card-bleu.png"
-        alt=""
-      />
-      <img
-        class="card-verte"
-        width="300"
-        src="/assets/images/Group-cardviolet-vert.png"
-        alt=""
-      />
-      <h2 class="titre-bienvenue">Bienvenue</h2>
-      <p class="text-group">
-        Ici, je vous invite à découvrir mes passions, mes apprentissages et mes
-        réflexions personnelles. Je met a disposition une collection de
-        ressources sélectionnées qui m'ont aidé à acquérir de nouvelles
-        compétences et à approfondir mes connaissances. De plus, je partage mes
-        réflexions sur des sujets qui me tiennent à cœur. Explorez ce lieu
-        d'échange où je mets en lumière mes projets, mes réussites, et parfois
-        même mes échecs, dans le but de grandir et d'évoluer continuellement.
-      </p>
-      <app-card-projects  ></app-card-projects>
+    <div style="margin: 0;">
+      <app-card-banners></app-card-banners>
+    </div>
+    <div class="presentation"  id="section_accueil">
+      <app-card-presentation></app-card-presentation>
+    </div>
+    <div class="projects_section" id="projects_section">
+      <app-galery-projects></app-galery-projects>
+    </div>
+    <div class="form_contact_section" id="section_contact">
       <app-form-contact></app-form-contact>
-    </mat-card-content>
-  </mat-card>
+    </div>
+    <div>
+    <!--<app-button    p-button class="button_return" style="position: fixed; margin-left:75%; margin-top: 50vh"></app-button>-->
+  </div>
+  </mat-card-content>
 </div>
+

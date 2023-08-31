@@ -1,0 +1,119 @@
+.group_card {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  height: 355px;
+  max-height: 360px;
+  padding: 1%;
+}
+@media screen and (max-width: 400px) {
+  .group_card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2%;
+    height: 900px;
+    min-height: 900px;
+    min-width: 90%;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 766px) {
+  .group_card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 900px;
+    min-height: 900px;
+    min-width: 90%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .group_card {
+    min-height: 500px;
+    height: 350px;
+    min-width: 95%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .group_card {
+    min-width: 90%;
+  }
+}
+
+.card-bleue {
+  position: absolute;
+}
+@media screen and (max-width: 766px) {
+  .card-bleue {
+    margin-left: 20%;
+    width: 50%;
+  }
+}
+
+.card-verte {
+  position: absolute;
+}
+@media screen and (max-width: 766px) {
+  .card-verte {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+.titre-bienvenue {
+  position: absolute;
+  margin-left: 50%;
+  font-family: "Euphoria Script";
+  font-size: 3rem;
+  transform: rotate(-12.31deg);
+  margin-top: 5px;
+  font-weight: bold;
+}
+@media screen and (max-width: 400px) {
+  .titre-bienvenue {
+    margin-top: 32vh;
+    margin-left: 15%;
+    width: 50%;
+    margin-right: 10%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 766px) {
+  .titre-bienvenue {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 75%;
+  }
+}
+
+.text_group {
+  position: absolute;
+  float: left;
+  shape-outside: margin-box;
+  margin-left: 35%;
+  margin-top: 5%;
+  line-height: 2;
+  padding-right: 5%;
+}
+@media screen and (max-width: 400px) {
+  .text_group {
+    height: 100%;
+    margin-left: 0%;
+    margin-top: 95%;
+    padding-left: 2%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 766px) {
+  .text_group {
+    height: 100%;
+    margin-left: 0%;
+    margin-top: 100%;
+    padding-left: 5%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .text_group {
+    padding-left: 8%;
+  }
+}/*# sourceMappingURL=card-bienvenue.component.css.map */

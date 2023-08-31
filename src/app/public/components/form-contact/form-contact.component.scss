@@ -1,38 +1,42 @@
 .form__container {
+  position: relative;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 75%;
   justify-content: center;
-  justify-self: center;
-  margin: auto;
-  margin-top: 10%;
-  background: rgb(47, 62, 70);
-  background: linear-gradient(
-    90deg,
-    rgba(47, 62, 70, 1) 0%,
-    rgba(189, 224, 254, 1) 50%,
-    rgba(101, 74, 117, 1) 100%
-  );
-  box-shadow: 5px 5px 15px 5px;
-  margin-top: 10%;
+  background-color: rgba(255, 255, 255, 0.034);
+  background-image: url("/assets/images/groupe_bulle.png");
+  background-size: cover;
+  box-shadow: 15px 10px 15px 5px rgba(0, 0, 0, 0.215);
   padding: 5%;
-  position: relative;
   border-radius: 15px;
-  width: 70%;
-  @media (max-width: 576px) {
-    margin-top: 10%;
-    width: 90%;
-  }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  color: white;
+  @media screen and (max-width: 400px) {
+    width: 95%;
+    margin-top: 0;
+    margin-right: 5%;
+    height: 100%;
+    margin-bottom: 5%;
+     }
+   @media screen and (min-width: 401px) and (max-width: 766px) {
+    min-width: 100%;
+    margin-bottom: 10%;
+   }
+
+  @media screen and (min-width: 767px) and (max-width: 991px) {
     min-width: 90%;
+    margin-top: 50vh;
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 80%;
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    width: 95%;
+    max-width: 90%;
+    margin-top:40vh;
   }
 }
 mat-form-field {
   width: 50%;
-  @media (max-width: 576px) {
+  @media (max-width: 766px) {
     width: 90%;
     margin: auto;
   }
@@ -43,12 +47,14 @@ mat-form-field {
   position: absolute;
   justify-self: flex-end;
   margin-left: 60%;
-  opacity: 0.8;
-  @media (max-width: 576px) {
+  border-radius: 50%;
+  border: solid 15px #cdb4db46;
+  opacity: 0.9;
+  @media (max-width: 766px) {
     visibility: hidden;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
     visibility: visible;
   }
 }
@@ -57,4 +63,30 @@ mat-form-field {
   font-size: 50px;
   font-weight: 300;
   margin-bottom: 5%;
+}
+.button_send_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button_send {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  border: #cdb4db solid px;
+  width: 100px;
+  background-color:#9138c5;
+  font-size:large;
+  color: white;
+  margin-top: 2%;
+
+}
+
+textarea{
+  resize: none;
+}
+.form_send{
+  margin-top: 5px;
+  color: rgb(17, 94, 17);
+  font-weight: bold;
 }

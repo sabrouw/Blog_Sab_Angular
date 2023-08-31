@@ -1,0 +1,33 @@
+<header>
+  <nav id="navbar_section" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img
+        width="100"
+        class="logo animate__flip"
+        src="/assets/images/logo-degrade.svg"
+        alt="logo ellecode"
+      />
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="navbarNavDropdown = !navbarNavDropdown"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarSupportedContent"
+        [ngbCollapse]="!navbarNavDropdown"
+      >
+        <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item nav_item"><a href="#section_contact">CONTACT</a></li>
+          <li class="nav-item nav_item"><a href="#section_accueil">ACCUEIL</a></li>
+          <li class="nav-item nav_item"><a href="#section_accueil">BLOG</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

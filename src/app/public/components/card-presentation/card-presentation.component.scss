@@ -1,0 +1,54 @@
+.container_card {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+color: white;
+  @media screen and (max-width: 400px) {
+   margin-left: 2%;
+   width: 95%;
+   padding: 15px;
+    }
+  @media screen and (min-width: 401px) and (max-width: 766px) {
+    width: 95%;
+    margin-left: 5%;
+   padding: 15px;
+   max-width: 400px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+
+  }
+
+}
+
+.container_card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container_card h2 {
+  font-family: "Euphoria Script";
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.container_card p {
+  line-height: 1.6;
+  font-size: medium;
+}
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: margin-box;
+  margin: 0 20px 5px 0;
+  @media screen and (max-width: 400px) {
+    width: 50%;
+     }
+   @media screen and (min-width: 401px) and (max-width: 766px) {
+
+   }
+}

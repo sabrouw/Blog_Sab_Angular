@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-familly: "Poppins", sans-serif;
+}
+
 .galery_projects_container {
   width: 100%;
   min-width: 100%;
@@ -53,9 +60,6 @@
     flex-direction: column;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
   }
 }
 
@@ -67,23 +71,17 @@
   transform: rotate(-12.31deg);
   display: flex;
   margin-left: 45%;
-
   color: white;
   @media screen and (max-width: 400px) {
-    margin-top: 8%;
+visibility: hidden;
   }
 
   @media screen and (min-width: 401px) and (max-width: 766px) {
-    margin-top: 8%;
+    padding-bottom: 10%;
+    margin-left: 35%;
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-familly: "Poppins", sans-serif;
-}
 section {
   display: flex;
   align-items: center;
@@ -93,14 +91,16 @@ section {
 
 .container {
   position: relative;
-  width: 1100px;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-warp: warp;
-  padding: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
   margin-top: -20%;
   @media screen and (max-width: 400px) {
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
   }
 }
 
@@ -109,22 +109,26 @@ section {
   max-width: 300px;
   height: 215px;
   background-color: #ffffffe2;
-  margin: 30px 10px;
-  padding: 20px 15px;
+  margin: 60px 10px;
+  padding: 30px 15px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
   border-radius: 15px;
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .container .card:hover {
-  height: 320px;
+  height: 310px;
 }
 
 .container .card .image {
   position: relative;
-  width: 260px;
+  width: 268px;
   height: 260px;
   top: -40%;
   left: 1px;
@@ -144,7 +148,6 @@ section {
   padding: 10px 15px;
   color: #111;
   text-align: center;
-
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -161,13 +164,25 @@ h3 {
   font-family: "Euphoria Script";
   font-size: 2rem;
   font-weight: bold;
+  @media screen and (max-width: 400px) {
+  }
 }
 .p2 {
   font-weight: bolder;
 }
-.fa-solid {
+.fa-code {
   background-color: #cdb4db;
   border-radius: 15px;
   padding: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.63);
 }
+
+.link a:link,
+:visited,
+:active,
+:focus {
+  text-decoration:underline;
+  color: #111;
+  cursor: pointer;
+}
+

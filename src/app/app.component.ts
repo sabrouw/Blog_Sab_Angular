@@ -8,16 +8,16 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
 })
 export class AppComponent implements OnInit{
   title = 'Blog_Sab_Angular';
-  
+
   constructor(private ngxService: NgxUiLoaderService) {}
-  
+
   ngOnInit() {
     this.ngxService.start();
     setTimeout(() => {
       this.ngxService.stop();
-    }, 5000);
+    }, 3000);
 
-   
+
     this.ngxService.startBackground("do-background-things");
 
     this.ngxService.stopBackground("do-background-things");
@@ -25,6 +25,6 @@ export class AppComponent implements OnInit{
     this.ngxService.startLoader("loader-01");
     setTimeout(() => {
       this.ngxService.stopLoader("loader-01");
-    }, 5000);
+    }, 3000);
   }
 }

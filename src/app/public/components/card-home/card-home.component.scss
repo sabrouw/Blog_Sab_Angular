@@ -4,27 +4,27 @@
 }
 
 .card_home_content {
-  flex: 1; /* Les sections s'étendent pour remplir l'espace restant */
+  flex: 1;
   display: flex;
   flex-direction: column;
   height: 420%;
   min-height: 420%;
   background-color: black;
   @media screen and (max-width: 400px) {
-    height: 600%;
-    min-height: 600%;
+    height: 520%;
+    min-height: 520%;
   }
   @media screen and (min-width: 401px) and (max-width: 766px) {
-    height: 480%;
-    min-height: 480%;
+    height: 420%;
+    min-height: 420%;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
-    height:520%;
-    min-height:520%;
+    height:400%;
+    min-height:400%;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
-    height:450%;
-    min-height: 450%;
+    height:465%;
+    min-height: 465%;
   }
 }
 
@@ -54,7 +54,7 @@
   }
   @media screen and (max-width: 766px) {
     margin: 0;
-    margin-top: 5%;
+    margin-top: 25%;
     width: 95%;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
@@ -69,18 +69,18 @@
   margin-bottom: 5%;
   margin-left: 5%;
   @media screen and (max-width: 400px) {
-    margin-top: 260%;
+    margin-top: 270%;
     margin-left: 0;
     width: 95%;
     min-width: 95%;
 
   }
   @media screen and (min-width: 401px) and (max-width: 766px) {
-    margin-top: 230%;
+    margin-top: 290%;
     margin-left: 0;
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {
-    margin-top: 70%;
+    margin-top: 50%;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     min-width: 100%;

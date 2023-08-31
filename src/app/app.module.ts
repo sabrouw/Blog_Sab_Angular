@@ -46,7 +46,7 @@ import { CardPresentationComponent } from './public/components/card-presentation
 import { NavComponent } from './public/components/nav/nav.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
+
 
 
 
@@ -86,7 +86,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     CardBienvenueComponent,
     GaleryProjectsComponent,
     CardPresentationComponent,
-    NavComponent
+    NavComponent,
+    
   ],
   imports: [
     BrowserModule,
